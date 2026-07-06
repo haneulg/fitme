@@ -1,0 +1,613 @@
+/*main_banner*/
+#main_banner {
+    background-image: url(../img/community_img/community_main_banner.png);
+    background-size: cover;
+    width: 100%;
+    height: 616.61px;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#main_banner .text_box {
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 120px;
+}
+
+#main_banner .text_box img {
+    margin: 0 auto;
+}
+
+#main_banner .text_box h1 {
+    padding: 46px 0 17px;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+#main_banner .text_box p {
+    font-size: 20px;
+
+    padding-bottom: 90px;
+}
+
+#main_banner .text_box .bottom_Arrow {
+    animation: arrowMoveY 1.5s infinite ease-in-out;
+
+}
+
+@keyframes arrowMoveY {
+
+    0%,
+    100% {
+        transform: translatey(0);
+    }
+
+    50% {
+        transform: translatey(15px);
+    }
+}
+
+/*review*/
+
+
+#review {
+    padding: 150px 0 200px;
+}
+
+
+#review .title {
+    border-bottom: #222222 solid 1px;
+    padding-bottom: 18px;
+    margin-bottom: 20px;
+}
+
+
+
+/* review 전체 배치 */
+.review_wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ------------------------
+      왼쪽 대표 리뷰
+------------------------ */
+
+.review_left {
+
+    width: 612px;
+
+}
+
+.review_img {
+
+    position: relative;
+
+}
+
+/* 대표 이미지 */
+
+.review_img>.img_box {
+    width: 612px;
+    height: 771px;
+    overflow: hidden;
+}
+
+.review_img>.img_box>img {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    display: block;
+
+}
+
+/* 좋아요 버튼 */
+
+#review .heart {
+
+    position: absolute;
+
+    top: 15px;
+    right: 15px;
+
+    border: none;
+    background: none;
+
+    cursor: pointer;
+    background-color: #222222;
+    padding: 6px 6px 4px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#review .heart_icon {
+    width: 22.38px;
+    height: 20.34px;
+}
+
+#review .heart:hover {
+    background-color: #b9d100;
+}
+
+
+
+/* 하단 정보 */
+
+.review_info {
+
+    position: absolute;
+
+    left: 30px;
+    right: 30px;
+    bottom: 25px;
+
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(2px);
+    padding: 15px;
+    border: #222222 solid 1.5px;
+
+}
+
+/* 작성자 */
+
+.review_profile {
+
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+
+}
+
+#reviewUser {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#reviewSpec {
+    font-size: 12px;
+}
+
+
+/* 하단 */
+
+.review_bottom {
+
+   
+
+    margin-top: 15px;
+
+}
+
+
+/* ------------------------
+      오른쪽 목록
+------------------------ */
+
+.review_right {
+
+    width: 640px;
+
+}
+
+.review_right table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+}
+
+.review_right th {
+    text-align: left;
+    color: #a6bd01;
+    padding: 0 15px 12px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.review_right td {
+    padding: 19px 15px;
+    border-top: #c5c5c5 solid 1px;
+    font-size: 18px;
+}
+
+.review_item {
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+.review_item:hover {
+
+    background: #d9eb73;
+
+}
+
+.review_right .review_item .des {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+}
+
+.review_right .review_item .date {
+    vertical-align: top;
+    width: 172px;
+    box-sizing: border-box;
+    color: #888888;
+}
+
+.review_right .review_item .store {
+    vertical-align: top;
+    width: 181px;
+    box-sizing: border-box;
+}
+
+.review_right .review_item .store span {
+    font-weight: 600;
+}
+
+/*styling*/
+#styling .img_box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-bottom: 200px;
+}
+
+#styling .title {
+    margin: 0 auto;
+    margin-bottom: 61px;
+}
+
+
+
+/*Clothing_Info*/
+#styling .Clothing_Info {
+
+    width: 150px;
+    border: #222222 solid 1.5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(2px);
+    padding: 13px;
+}
+
+#styling .Clothing_Info .store_name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#styling .Clothing_Info .icon {
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+
+#styling .Clothing_Info .store_name h2 {
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 800;
+    padding-bottom: 2px;
+}
+
+#styling .Clothing_Info .store_name h3 {
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 400;
+}
+
+#styling>.img_box>div>.Clothing_Info>li {
+    padding-bottom: 10px;
+}
+
+#styling>.img_box>div>.Clothing_Info>li:last-child {
+    padding-bottom: 0px;
+}
+
+#styling .popup_btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+#styling .popup_btn path {
+    fill: #222222;
+}
+
+
+/*여기까지 Clothing_Info 꾸밈요소*/
+
+
+
+
+/* 부모 */
+#styling .styling1 {
+    position: relative;
+}
+
+#styling .styling2 {
+    position: relative;
+}
+
+#styling .styling3 {
+    position: relative;
+}
+
+#styling .styling4 {
+    position: relative;
+}
+
+#styling .styling5 {
+    position: relative;
+}
+
+#styling .styling6 {
+    position: relative;
+}
+
+#styling .styling7 {
+    position: relative;
+}
+
+#styling .styling8 {
+    position: relative;
+}
+
+/* 플러스버튼 + 정보창 묶음 */
+#styling .info_wrap {
+    position: absolute;
+    z-index: 10;
+}
+
+/*플러스버튼 + 정보창 위치*/
+#styling .info_wrap1 {
+    top: 450px;
+    left: 186px;
+}
+
+#styling .info_wrap2 {
+    top: 200px;
+    left: 280px;
+}
+
+#styling .info_wrap2-2 {
+    top: 400px;
+    left: 180px;
+}
+#styling .info_wrap3 {
+    top: 350px;
+    left: 250px;
+}
+
+#styling .info_wrap3-2 {
+    top: 500px;
+    left: 200px;
+}
+
+#styling .info_wrap4 {
+    top: 300px;
+    left: 180px;
+}
+
+
+#styling .info_wrap5 {
+    top: 400px;
+    left: 180px;
+}
+
+#styling .info_wrap6 {
+    top: 310px;
+    left: 180px;
+}
+#styling .info_wrap7 {
+    top: 450px;
+    left: 180px;
+}
+#styling .info_wrap8 {
+    top: 180px;
+    left: 180px;
+}
+#styling .info_wrap8-2 {
+    top: 450px;
+    left: 250px;
+}
+
+
+
+
+/* 플러스버튼 */
+#styling .hover {
+    background-color: #fff;
+    border: 1px solid #222;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* 정보창 */
+#styling .Clothing_Info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* 필요하면 left를 조절 */
+    opacity: 0;
+    transition: 0.3s;
+    z-index: 9;
+    pointer-events: none;
+}
+
+/* 버튼 또는 정보창에 마우스가 있으면 계속 표시 */
+#styling .info_wrap:hover .Clothing_Info {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+
+/* 스토어팝업관련 */
+.plus_button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #222222;
+    padding: 4px;
+    border-radius: 99%;
+    z-index: 10;
+    border: none;
+    cursor: pointer;
+}
+
+
+.srote_next {
+    background-image: url(../img/store_img/button_right.svg);
+    width: 11.74px;
+    height: 19.95px;
+}
+
+.srote_prev {
+    background-image: url(../img/store_img/button_left.svg);
+    width: 11.74px;
+    height: 19.95px;
+}
+
+.srote_next svg {
+    display: none;
+}
+
+.srote_prev svg {
+    display: none;
+}
+
+
+
+
+/*==================================
+        Store Popup
+==================================*/
+.store_popup {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.store_popup .popup_inner {
+    position: relative;
+    width: 719px;
+    height: 512px;
+    background: #fff;
+    border: 2px solid #222;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.store_popup_bar {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    cursor: pointer;
+    border: none;
+}
+
+.store_close_btn {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    cursor: pointer;
+    border: none;
+}
+
+.store_popup .popup_contents {
+    position: absolute;
+    top: 63px;
+    left: 40px;
+    right: 40px;
+    display: flex;
+    gap: 30px;
+}
+
+.popup_left {
+    width: 45%;
+    flex-shrink: 0;
+    /* swiper가 아무리 커지려 해도 이 너비 이상 안 커지게 고정 */
+}
+
+.popup_right {
+    width: 50%;
+    flex-shrink: 0;
+}
+
+.popup_right .store_name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popup_right .store_name .icon {
+    display: flex;
+    gap: 10px;
+}
+
+.popup_right .name {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.popup_right .name span {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.popup_right .store_des {
+    padding: 9px 0;
+}
+
+.popup_right .Contact {
+    display: flex;
+    justify-content: space-between;
+    border-top:solid 0.5px #222;
+    padding: 9px 0;
+}
+
+.popup_right .Contact_des {
+    width: 145px;
+    font-size: 12px;
+}
+.popup_right .tags{
+      display: flex;
+    flex-wrap: wrap;   /* 공간이 부족하면 다음 줄로 */
+    gap: 4px;
+}
+.popup_right .tags span{border: #222222 1px solid;
+padding: 4px 8px;
+font-weight: 600;
+}
+
+.store_popup{
+    display:none;
+}
+
+.store_popup.active{
+    display:flex;
+}

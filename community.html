@@ -1,0 +1,1701 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>store</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <!--DM Sans_font1-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <!--mona_font2-->
+    <link rel="stylesheet" href="./fonts/stylesheet.css">
+    <!--favicon-->
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <!--공통css-->
+    <link rel="stylesheet" href="./css/fitme.css">
+    <!--css-->
+    <link rel="stylesheet" href="./css/community_fitme.css">
+
+</head>
+
+<body>
+    <header id="header">
+        <h1><a href="./index.html"><img src="./img/logo_header.svg" alt="logo"></a></h1>
+        <ul class="gnb">
+            <li>
+                <a href="./store.html">Store</a>
+                <ul class="sub_menu">
+                    <li><a href="./store.html#explore">Explore</a></li>
+                    <li><a href="./store.html#manthly">Manthly</a></li>
+                    <li><a href="./store.html#interview">Interview</a></li>
+                </ul>
+            </li>
+
+            <li><a href="./Project.html">Project</a></li>
+            <li><a href="#">Community</a>
+                <ul class="sub_menu">
+                    <li><a href="./community.html#review">Reviews </a></li>
+                    <li><a href="./community.html#styling">Styling</a></li>
+                </ul>
+            </li>
+        </ul>
+        <a href="#" class="catch_btn">
+            <img src="./img/Catch.svg" alt="catch">
+        </a>
+    </header><!--header-->
+
+    <!--catch_popup-->
+    <div id="catch_popup">
+        <div class="popup_inner">
+            <img class="catch_popup_bar" src="./img/catch_popup.png" alt="캐치팝업창상단바">
+            <button class="close_btn"><img src="./img/close_btn.png" alt=""></button>
+
+            <h2>My Catch</h2>
+
+            <div class="tab_menu">
+                <button class="tab active" data-tab="style">
+                    Saved Styling
+                </button>
+
+                <button class="tab" data-tab="store">
+                    Saved Store
+                </button>
+            </div>
+
+            <div class="tab_contents">
+
+                <div class="tab_content active" id="style">
+                    <div id="saved_style_list">
+                        <!-- 하트 누른 스타일 -->
+                    </div>
+                </div>
+
+                <div class="tab_content" id="store">
+                    <div id="saved_store_list">
+                        <!-- 관심 매장 -->
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div><!--catch_popup-->
+
+    <main>
+        <section id="main_banner">
+            <div class="text_box">
+                <img src="./img/community_img/Community.svg" alt="메뉴이름">
+                <h1>부산의 로컬 패션을 함께.</h1>
+                <p>스타일을 공유하고 다양한 사람들의 패션 이야기를 만나며,<br>
+                    당신만의 새로운 영감을 발견해보세요.</p>
+                <img class="bottom_Arrow" src="./img/store_img/bottom_Arrow.svg" alt="아래보기화살표">
+            </div>
+        </section><!--main_banner-->
+
+
+        <!-- review -->
+        <section id="review" class="inner">
+            <div class="title"><img src="./img/community_img/Reviews.svg" alt="explore"></div>
+            <div class="review_wrap">
+
+
+                <!-- 왼쪽 대표 리뷰 -->
+                <div class="review_left">
+
+                    <div class="review_img">
+
+                        <!-- 대표 이미지 -->
+                        <div class="img_box">
+                            <img id="reviewMainImg" src="./img/community_img/review_1.jpeg" alt="대표리뷰">
+                        </div>
+
+
+                        <!-- 좋아요 버튼 -->
+                        <div class="heart">
+                            <a href="#"><img class="heart_icon" src="./img/heart1.svg" alt="하트아이콘"></a>
+                        </div>
+
+                        <!-- 하단 정보 -->
+                        <div class="review_info">
+
+                            <div class="review_profile">
+                                <p id="reviewUser">@moodjin <span id="reviewSpec">175cm · 68kg</span></p>
+
+                            </div>
+
+                            <p id="reviewText">
+                                지나가다가 우연히 들어갔는데 생각보다 괜찮은
+                                아이템이 많았어요. 사장님 도 부담스럽지 않게해주셔서 감사했어요! 다음에 또 방문할예정입니다!
+                            </p>
+
+                            <div class="review_bottom">
+
+                                <strong id="reviewStore">
+                                    누보 NUVO
+                                </strong>
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- 오른쪽 리뷰 목록 -->
+                <div class="review_right">
+
+                    <table>
+
+                        <thead>
+                            <tr>
+                                <th>DATE</th>
+                                <th>STORE</th>
+                                <th>REVIEW</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <!-- 리뷰 1 -->
+                            <tr class="review_item" data-img="./img/community_img/review_1.jpeg" 
+                             data-user="@moodjin"
+                                data-spec="175cm · 68kg"
+                                data-text="지나가다가 우연히 들어갔는데 생각보다 괜찮은 아이템이 많았어요. 사장님 도 부담스럽지 않게해주셔서 감사했어요! 다음에 또 방문할예정입니다!"
+                                data-store="누보 NUVO">
+
+                                <td class="date">2026.07.18</td>
+                                <td class="store"><span>누보</span> NUVO</td>
+                                <td>
+                                    <div class="des">지나가다가 우연히 들어갔는데 생각보다 괜찮은
+                                        아이템이 많았어요. 사장님 도 부담스럽지 않게해주셔서 감사했어요</div>
+                                </td>
+
+                            </tr>
+
+
+                            <!-- 리뷰 2 -->
+                            <tr class="review_item" data-img="./img/community_img/review_2.jpeg" data-user="@jun"
+                                data-spec="168cm · 58kg" data-text="옷 하나하나 셀렉이 정말 취향 저격이에요. 흔하지 않은 디자인이 많아서 구경하는 재미가 있었고, 직원분도 친절하게 스타일링을 추천해주셔서 만족했습니다." data-store="모로우">
+
+                                <td class="date">2026.07.18</td>
+                                <td class="store"><span>로제트</span> Rosette</td>
+                                <td>
+                                    <div class="des">옷 하나하나 셀렉이 정말 취향 저격이에요. 흔하지 않은 디자인이 많아서 구경하는 재미가 있었고, 직원분도 친절하게 스타일링을 추천해주셔서 만족했습니다.</div>
+                                </td>
+
+                            </tr>
+
+                            <!-- 리뷰 3 -->
+                            <tr class="review_item" data-img="./img/community_img/review_3.jpeg" data-user="@miiin_22"
+                                data-spec="168cm · 58kg" data-text="매장 분위기가 아늑해서 천천히 둘러보기 좋았어요. 온라인에서는 보기 어려운 로컬 브랜드 제품을 직접 착용해볼 수 있어서 만족했습니다." data-store="모로우 Morrow">
+
+                                <td class="date">2026.07.18</td>
+                                <td class="store"><span>모로우</span> Morrow</td>
+                                <td>
+                                    <div class="des">매장 분위기가 아늑해서 천천히 둘러보기 좋았어요. 온라인에서는 보기 어려운 로컬 브랜드 제품을 직접 착용해볼 수 있어서 만족했습니다.</div>
+                                </td>
+
+                            </tr>
+
+                            <!-- 리뷰 4 -->
+                            <tr class="review_item" data-img="./img/community_img/review_4.jpeg" data-user="@busan_fit"
+                                data-spec="168cm · 58kg" data-text="부산 여행 중 우연히 들렀는데 가장 기억에 남는 쇼핑 공간이었어요. 감성적인 인테리어와 다양한 브랜드를 한 번에 볼 수 있어 추천합니다." data-store="로제트 Rosette">
+
+                                <td class="date">2026.07.18</td>
+                                <td class="store"><span>로제트</span> Rosette</td>
+                                <td>
+                                    <div class="des">부산 여행 중 우연히 들렀는데 가장 기억에 남는 쇼핑 공간이었어요. 감성적인 인테리어와 다양한 브랜드를 한 번에 볼 수 있어 추천합니다.</div>
+                                </td>
+
+                            </tr>
+
+                            <!-- 리뷰 5 -->
+                            <tr class="review_item" data-img="./img/community_img/review_5.jpeg" data-user="@yuna.daily"
+                                data-spec="168cm · 58kg" data-text="빈티지와 자체제작 아이템이 적절히 섞여 있어서 취향에 맞는 옷을 쉽게 찾을 수 있었어요. 다음 시즌도 기대됩니다." data-store="누보 NUVO">
+
+                                <td class="date">2026.07.18</td>
+                                <td class="store"><span>누보</span> NUVO</td>
+                                <td>
+                                    <div class="des">빈티지와 자체제작 아이템이 적절히 섞여 있어서 취향에 맞는 옷을 쉽게 찾을 수 있었어요. 다음 시즌도 기대됩니다.</div>
+                                </td>
+
+                            </tr>
+
+                            <!-- 리뷰 6 -->
+                            <tr class="review_item" data-img="./img/community_img/review_6.jpeg" data-user="@cozy_j"
+                                data-spec="168cm · 58kg" data-text="가격대도 합리적이고 퀄리티가 좋아 만족했습니다. 오래 입을 수 있는 기본 아이템이 많아서 재방문 의사 있어요." data-store="세렝 Serein">
+
+                                <td class="date">2026.07.18</td>
+                                <td class="store"><span>세렝</span> Serein</td>
+                                <td>
+                                    <div class="des">가격대도 합리적이고 퀄리티가 좋아 만족했습니다. 오래 입을 수 있는 기본 아이템이 많아서 재방문 의사 있어요.</div>
+                                </td>
+
+                            </tr>
+
+                            <!-- 리뷰 7 -->
+                            <tr class="review_item" data-img="./img/community_img/review_7.jpeg" data-user="@eun_zip"
+                                data-spec="168cm · 58kg" data-text="매장 음악과 분위기가 너무 좋아서 쇼핑하는 내내 기분이 좋았습니다. 사진 찍기 좋은 공간도 많아요." data-store="메쥬르 MESURE">
+
+                                <td class="date">2026.07.18</td>
+                                <td class="store"><span>메쥬르</span> MESURE</td>
+                                <td>
+                                    <div class="des">매장 음악과 분위기가 너무 좋아서 쇼핑하는 내내 기분이 좋았습니다. 사진 찍기 좋은 공간도 많아요.</div>
+                                </td>
+
+                            </tr>
+
+                            <!-- 리뷰 8 -->
+                            <tr class="review_item"  data-img="./img/community_img/review_8.jpeg" data-user="@lookbook_k"
+                                data-spec="168cm · 58kg" data-text="사장님이 브랜드 스토리와 제품 특징을 자세히 설명해주셔서 더 재미있게 둘러봤어요. 단순히 쇼핑이 아니라 브랜드를 경험하는 느낌이었습니다." data-store="모로우 Morrow">
+
+                                <td class="date">2026.07.18</td>
+                                <td class="store"><span>무로우</span> Morrow</td>
+                                <td>
+                                    <div class="des">사장님이 브랜드 스토리와 제품 특징을 자세히 설명해주셔서 더 재미있게 둘러봤어요. 단순히 쇼핑이 아니라 브랜드를 경험하는 느낌이었습니다.</div>
+                                </td>
+
+                            </tr>
+
+                            <!-- 리뷰 9 -->
+                            <tr class="review_item"  data-img="./img/community_img/review_9.jpeg" data-user="@dayoff_95"
+                                data-spec="168cm · 58kg" data-text="평소 찾던 미니멀한 스타일의 옷이 많아서 만족했어요. 다른 지역에서는 보기 힘든 로컬 브랜드를 만날 수 있다는 점이 가장 좋았습니다." data-store="메쥬르 MORROW">
+
+                                <td class="date">2026.07.18</td>
+                                <td class="store"><span>메쥬르</span> MORROW</td>
+                                <td>
+                                    <div class="des">평소 찾던 미니멀한 스타일의 옷이 많아서 만족했어요. 다른 지역에서는 보기 힘든 로컬 브랜드를 만날 수 있다는 점이 가장 좋았습니다.</div>
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div><!--review_wrap-->
+
+        </section><!--review-->
+
+        <section id="styling">
+            <img class="title" src="./img/community_img/Fitme_styling.svg" alt="스타일링타이틀">
+            <div class="img_box">
+
+
+                <div class="styling1"><!--styling1-->
+                    <img src="./img/community_img/styling1.png" alt="스타일링1">
+                    <div class="info_wrap info_wrap1">
+                        <img class="hover hover1" src="./img/community_img/plus_button.svg" alt="">
+                        <ul class="Clothing_Info">
+                            <li>
+                                <ul class="store_name">
+                                    <li>
+                                        <h2>오브</h2>
+                                        <h3>AUBE</h3>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="popup_btn" data-popup="popup_AUBE"><svg width="20" height="20" viewBox="0 0 16 16"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M15.0322 12.8842H12.884V15.0313H15.0322V12.8842Z"
+                                                    fill="white" />
+                                                <path d="M12.8843 10.7369H10.7373V12.8841H12.8843V10.7369Z"
+                                                    fill="white" />
+                                                <path d="M10.7371 6.44263H8.58887V8.58856H10.7371V6.44263Z"
+                                                    fill="white" />
+                                                <path d="M10.7371 4.29541H8.58887V6.44255H10.7371V4.29541Z"
+                                                    fill="white" />
+                                                <path d="M10.7371 2.14709H8.58887V4.29423H10.7371V2.14709Z"
+                                                    fill="white" />
+                                                <path d="M8.59035 8.58862H6.44336V10.7358H8.59035V8.58862Z"
+                                                    fill="white" />
+                                                <path d="M8.59035 0H6.44336V2.14714H8.59035V0Z" fill="white" />
+                                                <path d="M6.44336 8.58862H4.29517V10.7358H6.44336V8.58862Z"
+                                                    fill="white" />
+                                                <path d="M6.44336 0H4.29517V2.14714H6.44336V0Z" fill="white" />
+                                                <path d="M4.29518 8.58862H2.14819V10.7358H4.29518V8.58862Z"
+                                                    fill="white" />
+                                                <path d="M4.29518 0H2.14819V2.14714H4.29518V0Z" fill="white" />
+                                                <path d="M2.1482 6.44263H0V8.58856H2.1482V6.44263Z" fill="white" />
+                                                <path d="M2.1482 4.29541H0V6.44255H2.1482V4.29541Z" fill="white" />
+                                                <path d="M2.1482 2.14709H0V4.29423H2.1482V2.14709Z" fill="white" />
+                                            </svg>
+                                        </button>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li class="Price">
+                                <p>Pink Pinstripe Pants</p>
+                                <p>KRW <b>46,000</b></p>
+                            </li>
+
+                            <li class="icon">
+                                <a href="#"><img src="./img/home_icon.svg" alt="홈페이지아이콘"></a>
+                                <a href="#"><img src="./img/insta_icon.svg" alt="인스타그램아이콘"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div><!--styling1끝-->
+
+
+                <div class="styling2"><!--styling2-->
+                    <img src="./img/community_img/styling2.png" alt="스타일링2">
+
+                    <div class="info_wrap info_wrap2"><!--info_wrap2-->
+                        <img class="hover hover1" src="./img/community_img/plus_button.svg" alt="">
+                        <ul class="Clothing_Info">
+                            <li>
+                                <ul class="store_name">
+                                    <li>
+                                        <h2>포름</h2>
+                                        <h3>FORME</h3>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="popup_btn" data-popup="popup_FORME"><svg width="20" height="20" viewBox="0 0 16 16"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M15.0322 12.8842H12.884V15.0313H15.0322V12.8842Z"
+                                                    fill="white" />
+                                                <path d="M12.8843 10.7369H10.7373V12.8841H12.8843V10.7369Z"
+                                                    fill="white" />
+                                                <path d="M10.7371 6.44263H8.58887V8.58856H10.7371V6.44263Z"
+                                                    fill="white" />
+                                                <path d="M10.7371 4.29541H8.58887V6.44255H10.7371V4.29541Z"
+                                                    fill="white" />
+                                                <path d="M10.7371 2.14709H8.58887V4.29423H10.7371V2.14709Z"
+                                                    fill="white" />
+                                                <path d="M8.59035 8.58862H6.44336V10.7358H8.59035V8.58862Z"
+                                                    fill="white" />
+                                                <path d="M8.59035 0H6.44336V2.14714H8.59035V0Z" fill="white" />
+                                                <path d="M6.44336 8.58862H4.29517V10.7358H6.44336V8.58862Z"
+                                                    fill="white" />
+                                                <path d="M6.44336 0H4.29517V2.14714H6.44336V0Z" fill="white" />
+                                                <path d="M4.29518 8.58862H2.14819V10.7358H4.29518V8.58862Z"
+                                                    fill="white" />
+                                                <path d="M4.29518 0H2.14819V2.14714H4.29518V0Z" fill="white" />
+                                                <path d="M2.1482 6.44263H0V8.58856H2.1482V6.44263Z" fill="white" />
+                                                <path d="M2.1482 4.29541H0V6.44255H2.1482V4.29541Z" fill="white" />
+                                                <path d="M2.1482 2.14709H0V4.29423H2.1482V2.14709Z" fill="white" />
+                                            </svg>
+                                        </button>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li class="Price">
+                                <p>Soft Knit Cardigan</p>
+                                <p>KRW <b>39,000</b></p>
+                            </li>
+
+                            <li class="icon">
+                                <a href="#"><img src="./img/home_icon.svg" alt="홈페이지아이콘"></a>
+                                <a href="#"><img src="./img/insta_icon.svg" alt="인스타그램아이콘"></a>
+                            </li>
+                        </ul>
+                    </div><!--info_wrap2끝-->
+
+                    <div class="info_wrap info_wrap2-2"><!--info_wrap2-2-->
+                        <img class="hover hover1" src="./img/community_img/plus_button.svg" alt="">
+                        <ul class="Clothing_Info">
+                            <li>
+                                <ul class="store_name">
+                                    <li>
+                                        <h2>메쥬르</h2>
+                                        <h3>MESURE</h3>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="popup_btn" data-popup="popup_MESURE"><svg width="20" height="20" viewBox="0 0 16 16"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M15.0322 12.8842H12.884V15.0313H15.0322V12.8842Z"
+                                                    fill="white" />
+                                                <path d="M12.8843 10.7369H10.7373V12.8841H12.8843V10.7369Z"
+                                                    fill="white" />
+                                                <path d="M10.7371 6.44263H8.58887V8.58856H10.7371V6.44263Z"
+                                                    fill="white" />
+                                                <path d="M10.7371 4.29541H8.58887V6.44255H10.7371V4.29541Z"
+                                                    fill="white" />
+                                                <path d="M10.7371 2.14709H8.58887V4.29423H10.7371V2.14709Z"
+                                                    fill="white" />
+                                                <path d="M8.59035 8.58862H6.44336V10.7358H8.59035V8.58862Z"
+                                                    fill="white" />
+                                                <path d="M8.59035 0H6.44336V2.14714H8.59035V0Z" fill="white" />
+                                                <path d="M6.44336 8.58862H4.29517V10.7358H6.44336V8.58862Z"
+                                                    fill="white" />
+                                                <path d="M6.44336 0H4.29517V2.14714H6.44336V0Z" fill="white" />
+                                                <path d="M4.29518 8.58862H2.14819V10.7358H4.29518V8.58862Z"
+                                                    fill="white" />
+                                                <path d="M4.29518 0H2.14819V2.14714H4.29518V0Z" fill="white" />
+                                                <path d="M2.1482 6.44263H0V8.58856H2.1482V6.44263Z" fill="white" />
+                                                <path d="M2.1482 4.29541H0V6.44255H2.1482V4.29541Z" fill="white" />
+                                                <path d="M2.1482 2.14709H0V4.29423H2.1482V2.14709Z" fill="white" />
+                                            </svg>
+                                        </button>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li class="Price">
+                                <p>Wide Cotton Pants</p>
+                                <p>KRW <b>42,500</b></p>
+                            </li>
+
+                            <li class="icon">
+                                <a href="#"><img src="./img/home_icon.svg" alt="홈페이지아이콘"></a>
+                                <a href="#"><img src="./img/insta_icon.svg" alt="인스타그램아이콘"></a>
+                            </li>
+                        </ul>
+                    </div><!--info_wrap2-2끝-->
+                </div><!--styling2끝-->
+
+
+                <div class="styling3"><!--styling3-->
+                    <img src="./img/community_img/styling3.png" alt="스타일링3">
+                    <div class="info_wrap info_wrap3"><!--info_wrap3-->
+                        <img class="hover hover1" src="./img/community_img/plus_button.svg" alt="">
+                        <ul class="Clothing_Info">
+                            <li>
+                                <ul class="store_name">
+                                    <li>
+                                        <h2>오브</h2>
+                                        <h3>AUBE</h3>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="popup_btn" data-popup="popup_AUBE"><svg width="20" height="20" viewBox="0 0 16 16"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M15.0322 12.8842H12.884V15.0313H15.0322V12.8842Z"
+                                                    fill="white" />
+                                                <path d="M12.8843 10.7369H10.7373V12.8841H12.8843V10.7369Z"
+                                                    fill="white" />
+                                                <path d="M10.7371 6.44263H8.58887V8.58856H10.7371V6.44263Z"
+                                                    fill="white" />
+                                                <path d="M10.7371 4.29541H8.58887V6.44255H10.7371V4.29541Z"
+                                                    fill="white" />
+                                                <path d="M10.7371 2.14709H8.58887V4.29423H10.7371V2.14709Z"
+                                                    fill="white" />
+                                                <path d="M8.59035 8.58862H6.44336V10.7358H8.59035V8.58862Z"
+                                                    fill="white" />
+                                                <path d="M8.59035 0H6.44336V2.14714H8.59035V0Z" fill="white" />
+                                                <path d="M6.44336 8.58862H4.29517V10.7358H6.44336V8.58862Z"
+                                                    fill="white" />
+                                                <path d="M6.44336 0H4.29517V2.14714H6.44336V0Z" fill="white" />
+                                                <path d="M4.29518 8.58862H2.14819V10.7358H4.29518V8.58862Z"
+                                                    fill="white" />
+                                                <path d="M4.29518 0H2.14819V2.14714H4.29518V0Z" fill="white" />
+                                                <path d="M2.1482 6.44263H0V8.58856H2.1482V6.44263Z" fill="white" />
+                                                <path d="M2.1482 4.29541H0V6.44255H2.1482V4.29541Z" fill="white" />
+                                                <path d="M2.1482 2.14709H0V4.29423H2.1482V2.14709Z" fill="white" />
+                                            </svg>
+                                        </button>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li class="Price">
+                                <p>Gray Longline Tee</p>
+                                <p>KRW<b> 20,300</b></p>
+                            </li>
+                        
+                            <li class="icon">
+                                <a href="#"><img src="./img/home_icon.svg" alt="홈페이지아이콘"></a>
+                                <a href="#"><img src="./img/insta_icon.svg" alt="인스타그램아이콘"></a>
+                            </li>
+                        </ul>
+                    </div><!--info_wrap3끝-->
+
+                    <div class="info_wrap info_wrap3-2"><!--info_wrap3-2-->
+                        <img class="hover hover1" src="./img/community_img/plus_button.svg" alt="">
+                        <ul class="Clothing_Info">
+                            <li>
+                                <ul class="store_name">
+                                    <li>
+                                        <h2>누보</h2>
+                                        <h3>NUVO</h3>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="popup_btn" data-popup="popup_nuvo"><svg width="20" height="20" viewBox="0 0 16 16"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M15.0322 12.8842H12.884V15.0313H15.0322V12.8842Z"
+                                                    fill="white" />
+                                                <path d="M12.8843 10.7369H10.7373V12.8841H12.8843V10.7369Z"
+                                                    fill="white" />
+                                                <path d="M10.7371 6.44263H8.58887V8.58856H10.7371V6.44263Z"
+                                                    fill="white" />
+                                                <path d="M10.7371 4.29541H8.58887V6.44255H10.7371V4.29541Z"
+                                                    fill="white" />
+                                                <path d="M10.7371 2.14709H8.58887V4.29423H10.7371V2.14709Z"
+                                                    fill="white" />
+                                                <path d="M8.59035 8.58862H6.44336V10.7358H8.59035V8.58862Z"
+                                                    fill="white" />
+                                                <path d="M8.59035 0H6.44336V2.14714H8.59035V0Z" fill="white" />
+                                                <path d="M6.44336 8.58862H4.29517V10.7358H6.44336V8.58862Z"
+                                                    fill="white" />
+                                                <path d="M6.44336 0H4.29517V2.14714H6.44336V0Z" fill="white" />
+                                                <path d="M4.29518 8.58862H2.14819V10.7358H4.29518V8.58862Z"
+                                                    fill="white" />
+                                                <path d="M4.29518 0H2.14819V2.14714H4.29518V0Z" fill="white" />
+                                                <path d="M2.1482 6.44263H0V8.58856H2.1482V6.44263Z" fill="white" />
+                                                <path d="M2.1482 4.29541H0V6.44255H2.1482V4.29541Z" fill="white" />
+                                                <path d="M2.1482 2.14709H0V4.29423H2.1482V2.14709Z" fill="white" />
+                                            </svg>
+                                        </button>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li class="Price">
+                                <p>Medium Wash Jeans</p>
+                                <p>KRW<b> 45,000</b></p>
+                            </li>
+                           
+                            <li class="icon">
+                                <a href="#"><img src="./img/home_icon.svg" alt="홈페이지아이콘"></a>
+                                <a href="#"><img src="./img/insta_icon.svg" alt="인스타그램아이콘"></a>
+                            </li>
+                        </ul>
+                    </div><!--info_wrap3-2끝-->
+                </div><!--styling3끝-->
+
+
+                <div class="styling4"><!--styling4-->
+                    <img src="./img/community_img/styling4.png" alt="스타일링4">
+                    <div class="info_wrap info_wrap4"><!--info_wrap4-->
+                        <img class="hover hover1" src="./img/community_img/plus_button.svg" alt="">
+                        <ul class="Clothing_Info">
+                            <li>
+                                <ul class="store_name">
+                                    <li>
+                                        <h2>오브</h2>
+                                        <h3>AUBE</h3>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="popup_btn" data-popup="popup_AUBE"><svg width="20" height="20" viewBox="0 0 16 16"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M15.0322 12.8842H12.884V15.0313H15.0322V12.8842Z"
+                                                    fill="white" />
+                                                <path d="M12.8843 10.7369H10.7373V12.8841H12.8843V10.7369Z"
+                                                    fill="white" />
+                                                <path d="M10.7371 6.44263H8.58887V8.58856H10.7371V6.44263Z"
+                                                    fill="white" />
+                                                <path d="M10.7371 4.29541H8.58887V6.44255H10.7371V4.29541Z"
+                                                    fill="white" />
+                                                <path d="M10.7371 2.14709H8.58887V4.29423H10.7371V2.14709Z"
+                                                    fill="white" />
+                                                <path d="M8.59035 8.58862H6.44336V10.7358H8.59035V8.58862Z"
+                                                    fill="white" />
+                                                <path d="M8.59035 0H6.44336V2.14714H8.59035V0Z" fill="white" />
+                                                <path d="M6.44336 8.58862H4.29517V10.7358H6.44336V8.58862Z"
+                                                    fill="white" />
+                                                <path d="M6.44336 0H4.29517V2.14714H6.44336V0Z" fill="white" />
+                                                <path d="M4.29518 8.58862H2.14819V10.7358H4.29518V8.58862Z"
+                                                    fill="white" />
+                                                <path d="M4.29518 0H2.14819V2.14714H4.29518V0Z" fill="white" />
+                                                <path d="M2.1482 6.44263H0V8.58856H2.1482V6.44263Z" fill="white" />
+                                                <path d="M2.1482 4.29541H0V6.44255H2.1482V4.29541Z" fill="white" />
+                                                <path d="M2.1482 2.14709H0V4.29423H2.1482V2.14709Z" fill="white" />
+                                            </svg>
+                                        </button>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li class="Price">
+                                <p>Halter Neck Top</p>
+                                <p>KRW<b> 45,900</b></p>
+                            </li>
+                            <li class="Price">
+                                <p>Essential White Tee</p>
+                                <p>KRW <b>28,000</b></p>
+                            </li>
+                            <li class="icon">
+                                <a href="#"><img src="./img/home_icon.svg" alt="홈페이지아이콘"></a>
+                                <a href="#"><img src="./img/insta_icon.svg" alt="인스타그램아이콘"></a>
+                            </li>
+                        </ul>
+                    </div><!--info_wrap4끝-->
+                </div>
+
+
+                <div class="styling5">
+                    <img src="./img/community_img/styling5.png" alt="스타일링5">
+                    <div class="info_wrap info_wrap5"><!--info_wrap5-->
+                        <img class="hover hover1" src="./img/community_img/plus_button.svg" alt="">
+                        <ul class="Clothing_Info">
+                            <li>
+                                <ul class="store_name">
+                                    <li>
+                                        <h2>로제트</h2>
+                                        <h3>Rosette</h3>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="popup_btn" data-popup="popup_rosette"><svg width="20" height="20" viewBox="0 0 16 16"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M15.0322 12.8842H12.884V15.0313H15.0322V12.8842Z"
+                                                    fill="white" />
+                                                <path d="M12.8843 10.7369H10.7373V12.8841H12.8843V10.7369Z"
+                                                    fill="white" />
+                                                <path d="M10.7371 6.44263H8.58887V8.58856H10.7371V6.44263Z"
+                                                    fill="white" />
+                                                <path d="M10.7371 4.29541H8.58887V6.44255H10.7371V4.29541Z"
+                                                    fill="white" />
+                                                <path d="M10.7371 2.14709H8.58887V4.29423H10.7371V2.14709Z"
+                                                    fill="white" />
+                                                <path d="M8.59035 8.58862H6.44336V10.7358H8.59035V8.58862Z"
+                                                    fill="white" />
+                                                <path d="M8.59035 0H6.44336V2.14714H8.59035V0Z" fill="white" />
+                                                <path d="M6.44336 8.58862H4.29517V10.7358H6.44336V8.58862Z"
+                                                    fill="white" />
+                                                <path d="M6.44336 0H4.29517V2.14714H6.44336V0Z" fill="white" />
+                                                <path d="M4.29518 8.58862H2.14819V10.7358H4.29518V8.58862Z"
+                                                    fill="white" />
+                                                <path d="M4.29518 0H2.14819V2.14714H4.29518V0Z" fill="white" />
+                                                <path d="M2.1482 6.44263H0V8.58856H2.1482V6.44263Z" fill="white" />
+                                                <path d="M2.1482 4.29541H0V6.44255H2.1482V4.29541Z" fill="white" />
+                                                <path d="M2.1482 2.14709H0V4.29423H2.1482V2.14709Z" fill="white" />
+                                            </svg>
+                                        </button>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li class="Price">
+                                <p>Vintage Floral Skirt</p>
+                                <p>KRW<b> 60,900</b></p>
+                            </li>
+                        
+                            <li class="icon">
+                                <a href="#"><img src="./img/home_icon.svg" alt="홈페이지아이콘"></a>
+                                <a href="#"><img src="./img/insta_icon.svg" alt="인스타그램아이콘"></a>
+                            </li>
+                        </ul>
+                    </div><!--info_wrap5끝-->
+                </div>
+
+
+                <div class="styling6">
+                    <img src="./img/community_img/styling6.png" alt="스타일링6">
+                    <div class="info_wrap info_wrap6"><!--info_wrap6-->
+                        <img class="hover hover1" src="./img/community_img/plus_button.svg" alt="">
+                        <ul class="Clothing_Info">
+                            <li>
+                                <ul class="store_name">
+                                    <li>
+                                        <h2>포름</h2>
+                                        <h3>FORME</h3>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="popup_btn" data-popup="popup_FORME"><svg width="20" height="20" viewBox="0 0 16 16"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M15.0322 12.8842H12.884V15.0313H15.0322V12.8842Z"
+                                                    fill="white" />
+                                                <path d="M12.8843 10.7369H10.7373V12.8841H12.8843V10.7369Z"
+                                                    fill="white" />
+                                                <path d="M10.7371 6.44263H8.58887V8.58856H10.7371V6.44263Z"
+                                                    fill="white" />
+                                                <path d="M10.7371 4.29541H8.58887V6.44255H10.7371V4.29541Z"
+                                                    fill="white" />
+                                                <path d="M10.7371 2.14709H8.58887V4.29423H10.7371V2.14709Z"
+                                                    fill="white" />
+                                                <path d="M8.59035 8.58862H6.44336V10.7358H8.59035V8.58862Z"
+                                                    fill="white" />
+                                                <path d="M8.59035 0H6.44336V2.14714H8.59035V0Z" fill="white" />
+                                                <path d="M6.44336 8.58862H4.29517V10.7358H6.44336V8.58862Z"
+                                                    fill="white" />
+                                                <path d="M6.44336 0H4.29517V2.14714H6.44336V0Z" fill="white" />
+                                                <path d="M4.29518 8.58862H2.14819V10.7358H4.29518V8.58862Z"
+                                                    fill="white" />
+                                                <path d="M4.29518 0H2.14819V2.14714H4.29518V0Z" fill="white" />
+                                                <path d="M2.1482 6.44263H0V8.58856H2.1482V6.44263Z" fill="white" />
+                                                <path d="M2.1482 4.29541H0V6.44255H2.1482V4.29541Z" fill="white" />
+                                                <path d="M2.1482 2.14709H0V4.29423H2.1482V2.14709Z" fill="white" />
+                                            </svg>
+                                        </button>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li class="Price">
+                                <p>Layered Long Sleeve T-Shirt</p>
+                                <p>KRW<b> 39,900</b></p>
+                            </li>
+                            
+                            <li class="icon">
+                                <a href="#"><img src="./img/home_icon.svg" alt="홈페이지아이콘"></a>
+                                <a href="#"><img src="./img/insta_icon.svg" alt="인스타그램아이콘"></a>
+                            </li>
+                        </ul>
+                    </div><!--info_wrap6끝-->
+                </div>
+
+
+                <div class="styling7">
+                    <img src="./img/community_img/styling7.png" alt="스타일링7">
+                    <div class="info_wrap info_wrap7"><!--info_wrap7-->
+                        <img class="hover hover1" src="./img/community_img/plus_button.svg" alt="">
+                        <ul class="Clothing_Info">
+                            <li>
+                                <ul class="store_name">
+                                    <li>
+                                        <h2>로제트</h2>
+                                        <h3>Rosette</h3>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="popup_btn" data-popup="popup_rosette"><svg width="20" height="20" viewBox="0 0 16 16"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M15.0322 12.8842H12.884V15.0313H15.0322V12.8842Z"
+                                                    fill="white" />
+                                                <path d="M12.8843 10.7369H10.7373V12.8841H12.8843V10.7369Z"
+                                                    fill="white" />
+                                                <path d="M10.7371 6.44263H8.58887V8.58856H10.7371V6.44263Z"
+                                                    fill="white" />
+                                                <path d="M10.7371 4.29541H8.58887V6.44255H10.7371V4.29541Z"
+                                                    fill="white" />
+                                                <path d="M10.7371 2.14709H8.58887V4.29423H10.7371V2.14709Z"
+                                                    fill="white" />
+                                                <path d="M8.59035 8.58862H6.44336V10.7358H8.59035V8.58862Z"
+                                                    fill="white" />
+                                                <path d="M8.59035 0H6.44336V2.14714H8.59035V0Z" fill="white" />
+                                                <path d="M6.44336 8.58862H4.29517V10.7358H6.44336V8.58862Z"
+                                                    fill="white" />
+                                                <path d="M6.44336 0H4.29517V2.14714H6.44336V0Z" fill="white" />
+                                                <path d="M4.29518 8.58862H2.14819V10.7358H4.29518V8.58862Z"
+                                                    fill="white" />
+                                                <path d="M4.29518 0H2.14819V2.14714H4.29518V0Z" fill="white" />
+                                                <path d="M2.1482 6.44263H0V8.58856H2.1482V6.44263Z" fill="white" />
+                                                <path d="M2.1482 4.29541H0V6.44255H2.1482V4.29541Z" fill="white" />
+                                                <path d="M2.1482 2.14709H0V4.29423H2.1482V2.14709Z" fill="white" />
+                                            </svg>
+                                        </button>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li class="Price">
+                                <p>Asym Hem Skirt</p>
+                                <p>KRW<b> 49,900</b></p>
+                            </li>
+                        
+                            <li class="icon">
+                                <a href="#"><img src="./img/home_icon.svg" alt="홈페이지아이콘"></a>
+                                <a href="#"><img src="./img/insta_icon.svg" alt="인스타그램아이콘"></a>
+                            </li>
+                        </ul>
+                    </div><!--info_wrap7끝-->
+                </div>
+
+
+                <div class="styling8">
+                    <img src="./img/community_img/styling8.png" alt="스타일링8">
+                    <div class="info_wrap info_wrap8"><!--info_wrap8-->
+                        <img class="hover hover1" src="./img/community_img/plus_button.svg" alt="">
+                        <ul class="Clothing_Info">
+                            <li>
+                                <ul class="store_name">
+                                    <li>
+                                        <h2>모로우</h2>
+                                        <h3>Morrow</h3>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="popup_btn" data-popup="popup_morrow"><svg width="20" height="20" viewBox="0 0 16 16"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M15.0322 12.8842H12.884V15.0313H15.0322V12.8842Z"
+                                                    fill="white" />
+                                                <path d="M12.8843 10.7369H10.7373V12.8841H12.8843V10.7369Z"
+                                                    fill="white" />
+                                                <path d="M10.7371 6.44263H8.58887V8.58856H10.7371V6.44263Z"
+                                                    fill="white" />
+                                                <path d="M10.7371 4.29541H8.58887V6.44255H10.7371V4.29541Z"
+                                                    fill="white" />
+                                                <path d="M10.7371 2.14709H8.58887V4.29423H10.7371V2.14709Z"
+                                                    fill="white" />
+                                                <path d="M8.59035 8.58862H6.44336V10.7358H8.59035V8.58862Z"
+                                                    fill="white" />
+                                                <path d="M8.59035 0H6.44336V2.14714H8.59035V0Z" fill="white" />
+                                                <path d="M6.44336 8.58862H4.29517V10.7358H6.44336V8.58862Z"
+                                                    fill="white" />
+                                                <path d="M6.44336 0H4.29517V2.14714H6.44336V0Z" fill="white" />
+                                                <path d="M4.29518 8.58862H2.14819V10.7358H4.29518V8.58862Z"
+                                                    fill="white" />
+                                                <path d="M4.29518 0H2.14819V2.14714H4.29518V0Z" fill="white" />
+                                                <path d="M2.1482 6.44263H0V8.58856H2.1482V6.44263Z" fill="white" />
+                                                <path d="M2.1482 4.29541H0V6.44255H2.1482V4.29541Z" fill="white" />
+                                                <path d="M2.1482 2.14709H0V4.29423H2.1482V2.14709Z" fill="white" />
+                                            </svg>
+                                        </button>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li class="Price">
+                                <p>Tank Top Set</p>
+                                <p>KRW<b> 56,900</b></p>
+                            </li>
+                            
+                            <li class="icon">
+                                <a href="#"><img src="./img/home_icon.svg" alt="홈페이지아이콘"></a>
+                                <a href="#"><img src="./img/insta_icon.svg" alt="인스타그램아이콘"></a>
+                            </li>
+                        </ul>
+                    </div><!--info_wrap8끝-->
+
+                    <div class="info_wrap info_wrap8-2"><!--info_wrap8-2-->
+                        <img class="hover hover1" src="./img/community_img/plus_button.svg" alt="">
+                        <ul class="Clothing_Info">
+                            <li>
+                                <ul class="store_name">
+                                    <li>
+                                        <h2>세렝</h2>
+                                        <h3>Serein</h3>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="popup_btn" data-popup="popup_Serein"><svg width="20" height="20" viewBox="0 0 16 16"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M15.0322 12.8842H12.884V15.0313H15.0322V12.8842Z"
+                                                    fill="white" />
+                                                <path d="M12.8843 10.7369H10.7373V12.8841H12.8843V10.7369Z"
+                                                    fill="white" />
+                                                <path d="M10.7371 6.44263H8.58887V8.58856H10.7371V6.44263Z"
+                                                    fill="white" />
+                                                <path d="M10.7371 4.29541H8.58887V6.44255H10.7371V4.29541Z"
+                                                    fill="white" />
+                                                <path d="M10.7371 2.14709H8.58887V4.29423H10.7371V2.14709Z"
+                                                    fill="white" />
+                                                <path d="M8.59035 8.58862H6.44336V10.7358H8.59035V8.58862Z"
+                                                    fill="white" />
+                                                <path d="M8.59035 0H6.44336V2.14714H8.59035V0Z" fill="white" />
+                                                <path d="M6.44336 8.58862H4.29517V10.7358H6.44336V8.58862Z"
+                                                    fill="white" />
+                                                <path d="M6.44336 0H4.29517V2.14714H6.44336V0Z" fill="white" />
+                                                <path d="M4.29518 8.58862H2.14819V10.7358H4.29518V8.58862Z"
+                                                    fill="white" />
+                                                <path d="M4.29518 0H2.14819V2.14714H4.29518V0Z" fill="white" />
+                                                <path d="M2.1482 6.44263H0V8.58856H2.1482V6.44263Z" fill="white" />
+                                                <path d="M2.1482 4.29541H0V6.44255H2.1482V4.29541Z" fill="white" />
+                                                <path d="M2.1482 2.14709H0V4.29423H2.1482V2.14709Z" fill="white" />
+                                            </svg>
+                                        </button>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li class="Price">
+                                <p>Capri Denim Jeans</p>
+                                <p>KRW<b> 69,900</b></p>
+                            </li>
+                            
+                            <li class="icon">
+                                <a href="#"><img src="./img/home_icon.svg" alt="홈페이지아이콘"></a>
+                                <a href="#"><img src="./img/insta_icon.svg" alt="인스타그램아이콘"></a>
+                            </li>
+                        </ul>
+                    </div><!--info_wrap8-2끝-->
+                </div>
+
+
+
+
+            </div>
+
+        </section>
+
+
+
+         <!-- =========================
+        Store Detail Popup
+========================= -->
+
+        <!-- 누보 팝업 -->
+        <div class="store_popup" id="popup_nuvo">
+
+            <div class="popup_inner">
+
+                <!-- 상단바 -->
+                <img class="store_popup_bar" src="./img/store_img/popup_bar.png" alt="팝업 상단바">
+
+                <!-- 닫기 버튼 -->
+                <button class="store_close_btn">
+                    <img src="./img/store_img/close_btn.png" alt="닫기">
+                </button>
+
+                <!-- 팝업 내용 -->
+                <div class="popup_contents">
+
+                    <!-- 왼쪽 : 이미지 슬라이드 -->
+                    <div class="popup_left">
+                        <div class="swiper store_card store_catch">
+                            <div class="swiper-wrapper ">
+                                <div class="swiper-slide ">
+                                    <img class="store_catch_img" src="./img/store_img/novo.png">
+
+                                </div>
+                                <div class="swiper-slide ">
+                                    <img src="./img/store_img/novo.png">
+                                </div>
+                                <div class="swiper-slide ">
+                                    <img src="./img/store_img/novo.png">
+                                </div>
+
+                            </div>
+
+
+                            <button class="plus_button"><img src="./img/store_img/plus.png" alt="플러스버튼"></button>
+
+                            <div class="swiper-button-next srote_next"></div>
+                            <div class="swiper-button-prev srote_prev"></div>
+
+                        </div>
+
+
+
+                    </div>
+
+                    <!-- 오른쪽 : 가게 정보 -->
+                    <div class="popup_right">
+                        <div class="store_name">
+                            <div class="text_box">
+                                <p class="name">누보 <span>NUVO</span></p>
+                            </div>
+                            <ul class="icon">
+                                <li><a href="#"><img src="./img/home_icon.svg" width="17px" height="17px"
+                                            alt="home아이콘"></a></li>
+                                <li><a href="https://www.instagram.com" target="_blank"><img src="./img/insta_icon.svg"
+                                            width="17px" height="17px" alt="인스타아이콘"></a></li>
+                            </ul>
+                        </div>
+                        <p class="store_des">
+                            차분한 무드의 빈티지 캐주얼을 중심으로 셀렉하는 로컬 편집샵이다. 시간이 지나도 오래 입을 수 있는 실루엣과 자연스러운 컬러감의 아이템들을 소개하는 공간이다. 부산
+                            로컬 브랜드와 빈티지 제품을 함께 큐레이션하며 편안한 분위기를 담아내고 있는 곳이다.
+                        </p>
+                        <div class="Contact">
+                            <h3 class="bold_name">ADDRESS</h3>
+                            <p class="Contact_des">부산광역시 해운대구<br>
+                                우동1로 38 1층</p>
+                        </div>
+                        <div class="Contact">
+                            <h3 class="bold_name">CONTACT</h3>
+                            <p class="Contact_des">Mobile: (010) 4837 1926<br>Tel: (051) 742 3812</p>
+                        </div>
+                        <div class="Contact">
+                            <h3 class="bold_name">OPEN HOURS</h3>
+                            <p class="Contact_des">평일: 12:00 - 21:00<br>
+                                주말: 13:00 - 22:00<br>
+                                (매주 화요일 휴무)</p>
+                        </div>
+                        <div class="tags">
+                            <span>전포동</span>
+                            <span>자체제작</span>
+                            <span>Coquette</span>
+                            <span>Romantic</span>
+                            <span>Unisex</span>
+                            <span>20대</span>
+                            <span>30대</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 로제트 팝업 -->
+        <div class="store_popup" id="popup_rosette">
+
+            <div class="popup_inner">
+
+                <!-- 상단바 -->
+                <img class="store_popup_bar" src="./img/store_img/popup_bar.png" alt="팝업 상단바">
+
+                <!-- 닫기 버튼 -->
+                <button class="store_close_btn">
+                    <img src="./img/store_img/close_btn.png" alt="닫기">
+                </button>
+
+                <!-- 팝업 내용 -->
+                <div class="popup_contents">
+
+                    <!-- 왼쪽 : 이미지 슬라이드 -->
+                    <div class="popup_left">
+                        <div class="swiper store_card store_catch">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide ">
+                                    <img class="store_catch_img" src="./img/store_img/rosette.png">
+                                </div>
+                                <div class="swiper-slide ">
+                                    <img src="./img/store_img/novo.png">
+                                </div>
+                                <div class="swiper-slide ">
+                                    <img src="./img/store_img/novo.png">
+                                </div>
+
+                            </div>
+
+
+                            <button class="plus_button"><img src="./img/store_img/plus.png" alt="플러스버튼"></button>
+
+                            <div class="swiper-button-next srote_next"></div>
+                            <div class="swiper-button-prev srote_prev"></div>
+
+                        </div>
+
+
+
+                    </div>
+
+                    <!-- 오른쪽 : 가게 정보 -->
+                    <div class="popup_right">
+                        <div class="store_name">
+                            <div class="text_box">
+                                <p class="name">로제트 <span>Rosette</span></p>
+                            </div>
+                            <ul class="icon">
+                                <li><a href="#"><img src="./img/home_icon.svg" width="17px" height="17px"
+                                            alt="home아이콘"></a></li>
+                                <li><a href="https://www.instagram.com" target="_blank"><img src="./img/insta_icon.svg"
+                                            width="17px" height="17px" alt="인스타아이콘"></a></li>
+                            </ul>
+                        </div>
+                        <p class="store_des">
+                            차분한 무드의 빈티지 캐주얼을 중심으로 셀렉하는 로컬 편집샵이다. 시간이 지나도 오래 입을 수 있는 실루엣과 자연스러운 컬러감의 아이템들을 소개하는 공간이다. 부산
+                            로컬 브랜드와 빈티지 제품을 함께 큐레이션하며 편안한 분위기를 담아내고 있는 곳이다.
+                        </p>
+                        <div class="Contact">
+                            <h3 class="bold_name">ADDRESS</h3>
+                            <p class="Contact_des">부산광역시 해운대구<br>
+                                우동1로 38 1층</p>
+                        </div>
+                        <div class="Contact">
+                            <h3 class="bold_name">CONTACT</h3>
+                            <p class="Contact_des">Mobile: (010) 4837 1926<br>Tel: (051) 742 3812</p>
+                        </div>
+                        <div class="Contact">
+                            <h3 class="bold_name">OPEN HOURS</h3>
+                            <p class="Contact_des">평일: 12:00 - 21:00<br>
+                                주말: 13:00 - 22:00<br>
+                                (매주 화요일 휴무)</p>
+                        </div>
+                        <div class="tags">
+                            <span>전포동</span>
+                            <span>자체제작</span>
+                            <span>Coquette</span>
+                            <span>Romantic</span>
+                            <span>Unisex</span>
+                            <span>20대</span>
+                            <span>30대</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 모로우 팝업 -->
+        <div class="store_popup" id="popup_morrow">
+
+            <div class="popup_inner">
+
+                <!-- 상단바 -->
+                <img class="store_popup_bar" src="./img/store_img/popup_bar.png" alt="팝업 상단바">
+
+                <!-- 닫기 버튼 -->
+                <button class="store_close_btn">
+                    <img src="./img/store_img/close_btn.png" alt="닫기">
+                </button>
+
+                <!-- 팝업 내용 -->
+                <div class="popup_contents">
+
+                    <!-- 왼쪽 : 이미지 슬라이드 -->
+                    <div class="popup_left">
+                        <div class="swiper store_card store_catch">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide ">
+                                    <img class="store_catch_img" src="./img/store_img/morrow.png">
+                                </div>
+                                <div class="swiper-slide ">
+                                    <img src="./img/store_img/novo.png">
+                                </div>
+                                <div class="swiper-slide ">
+                                    <img src="./img/store_img/novo.png">
+                                </div>
+
+                            </div>
+
+
+                            <button class="plus_button"><img src="./img/store_img/plus.png" alt="플러스버튼"></button>
+
+                            <div class="swiper-button-next srote_next"></div>
+                            <div class="swiper-button-prev srote_prev"></div>
+
+                        </div>
+
+
+
+                    </div>
+
+                    <!-- 오른쪽 : 가게 정보 -->
+                    <div class="popup_right">
+                        <div class="store_name">
+                            <div class="text_box">
+                                <p class="name">모로우 <span>Morrow</span></p>
+                            </div>
+                            <ul class="icon">
+                                <li><a href="#"><img src="./img/home_icon.svg" width="17px" height="17px"
+                                            alt="home아이콘"></a></li>
+                                <li><a href="https://www.instagram.com" target="_blank"><img src="./img/insta_icon.svg"
+                                            width="17px" height="17px" alt="인스타아이콘"></a></li>
+                            </ul>
+                        </div>
+                        <p class="store_des">
+                            차분한 무드의 빈티지 캐주얼을 중심으로 셀렉하는 로컬 편집샵이다. 시간이 지나도 오래 입을 수 있는 실루엣과 자연스러운 컬러감의 아이템들을 소개하는 공간이다. 부산
+                            로컬 브랜드와 빈티지 제품을 함께 큐레이션하며 편안한 분위기를 담아내고 있는 곳이다.
+                        </p>
+                        <div class="Contact">
+                            <h3 class="bold_name">ADDRESS</h3>
+                            <p class="Contact_des">부산광역시 해운대구<br>
+                                우동1로 38 1층</p>
+                        </div>
+                        <div class="Contact">
+                            <h3 class="bold_name">CONTACT</h3>
+                            <p class="Contact_des">Mobile: (010) 4837 1926<br>Tel: (051) 742 3812</p>
+                        </div>
+                        <div class="Contact">
+                            <h3 class="bold_name">OPEN HOURS</h3>
+                            <p class="Contact_des">평일: 12:00 - 21:00<br>
+                                주말: 13:00 - 22:00<br>
+                                (매주 화요일 휴무)</p>
+                        </div>
+                        <div class="tags">
+                            <span>전포동</span>
+                            <span>자체제작</span>
+                            <span>Coquette</span>
+                            <span>Romantic</span>
+                            <span>Unisex</span>
+                            <span>20대</span>
+                            <span>30대</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 오브 팝업 -->
+        <div class="store_popup" id="popup_AUBE">
+
+            <div class="popup_inner">
+
+                <!-- 상단바 -->
+                <img class="store_popup_bar" src="./img/store_img/popup_bar.png" alt="팝업 상단바">
+
+                <!-- 닫기 버튼 -->
+                <button class="store_close_btn">
+                    <img src="./img/store_img/close_btn.png" alt="닫기">
+                </button>
+
+                <!-- 팝업 내용 -->
+                <div class="popup_contents">
+
+                    <!-- 왼쪽 : 이미지 슬라이드 -->
+                    <div class="popup_left">
+                        <div class="swiper store_card store_catch">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide ">
+                                    <img class="store_catch_img" src="./img/store_img/aube.png">
+                                </div>
+                                <div class="swiper-slide ">
+                                    <img src="./img/store_img/novo.png">
+                                </div>
+                                <div class="swiper-slide ">
+                                    <img src="./img/store_img/novo.png">
+                                </div>
+
+                            </div>
+
+
+                            <button class="plus_button"><img src="./img/store_img/plus.png" alt="플러스버튼"></button>
+
+                            <div class="swiper-button-next srote_next"></div>
+                            <div class="swiper-button-prev srote_prev"></div>
+
+                        </div>
+
+
+
+                    </div>
+
+                    <!-- 오른쪽 : 가게 정보 -->
+                    <div class="popup_right">
+                        <div class="store_name">
+                            <div class="text_box">
+                                <p class="name">오브 <span>AUBE</span></p>
+                            </div>
+                            <ul class="icon">
+                                <li><a href="#"><img src="./img/home_icon.svg" width="17px" height="17px"
+                                            alt="home아이콘"></a></li>
+                                <li><a href="https://www.instagram.com" target="_blank"><img src="./img/insta_icon.svg"
+                                            width="17px" height="17px" alt="인스타아이콘"></a></li>
+                            </ul>
+                        </div>
+                        <p class="store_des">
+                            차분한 무드의 빈티지 캐주얼을 중심으로 셀렉하는 로컬 편집샵이다. 시간이 지나도 오래 입을 수 있는 실루엣과 자연스러운 컬러감의 아이템들을 소개하는 공간이다. 부산
+                            로컬 브랜드와 빈티지 제품을 함께 큐레이션하며 편안한 분위기를 담아내고 있는 곳이다.
+                        </p>
+                        <div class="Contact">
+                            <h3 class="bold_name">ADDRESS</h3>
+                            <p class="Contact_des">부산광역시 해운대구<br>
+                                우동1로 38 1층</p>
+                        </div>
+                        <div class="Contact">
+                            <h3 class="bold_name">CONTACT</h3>
+                            <p class="Contact_des">Mobile: (010) 4837 1926<br>Tel: (051) 742 3812</p>
+                        </div>
+                        <div class="Contact">
+                            <h3 class="bold_name">OPEN HOURS</h3>
+                            <p class="Contact_des">평일: 12:00 - 21:00<br>
+                                주말: 13:00 - 22:00<br>
+                                (매주 화요일 휴무)</p>
+                        </div>
+                        <div class="tags">
+                            <span>전포동</span>
+                            <span>자체제작</span>
+                            <span>Coquette</span>
+                            <span>Romantic</span>
+                            <span>Unisex</span>
+                            <span>20대</span>
+                            <span>30대</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 포름 팝업 -->
+        <div class="store_popup" id="popup_FORME">
+
+            <div class="popup_inner">
+
+                <!-- 상단바 -->
+                <img class="store_popup_bar" src="./img/store_img/popup_bar.png" alt="팝업 상단바">
+
+                <!-- 닫기 버튼 -->
+                <button class="store_close_btn">
+                    <img src="./img/store_img/close_btn.png" alt="닫기">
+                </button>
+
+                <!-- 팝업 내용 -->
+                <div class="popup_contents">
+
+                    <!-- 왼쪽 : 이미지 슬라이드 -->
+                    <div class="popup_left">
+                        <div class="swiper store_card store_catch">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide ">
+                                    <img class="store_catch_img" src="./img/store_img/forme.png">
+                                </div>
+                                <div class="swiper-slide ">
+                                    <img src="./img/store_img/novo.png">
+                                </div>
+                                <div class="swiper-slide ">
+                                    <img src="./img/store_img/novo.png">
+                                </div>
+
+                            </div>
+
+
+                            <button class="plus_button"><img src="./img/store_img/plus.png" alt="플러스버튼"></button>
+
+                            <div class="swiper-button-next srote_next"></div>
+                            <div class="swiper-button-prev srote_prev"></div>
+
+                        </div>
+
+
+
+                    </div>
+
+                    <!-- 오른쪽 : 가게 정보 -->
+                    <div class="popup_right">
+                        <div class="store_name">
+                            <div class="text_box">
+                                <p class="name">포름 <span>FORME</span></p>
+                            </div>
+                            <ul class="icon">
+                                <li><a href="#"><img src="./img/home_icon.svg" width="17px" height="17px"
+                                            alt="home아이콘"></a></li>
+                                <li><a href="https://www.instagram.com" target="_blank"><img src="./img/insta_icon.svg"
+                                            width="17px" height="17px" alt="인스타아이콘"></a></li>
+                            </ul>
+                        </div>
+                        <p class="store_des">
+                            차분한 무드의 빈티지 캐주얼을 중심으로 셀렉하는 로컬 편집샵이다. 시간이 지나도 오래 입을 수 있는 실루엣과 자연스러운 컬러감의 아이템들을 소개하는 공간이다. 부산
+                            로컬 브랜드와 빈티지 제품을 함께 큐레이션하며 편안한 분위기를 담아내고 있는 곳이다.
+                        </p>
+                        <div class="Contact">
+                            <h3 class="bold_name">ADDRESS</h3>
+                            <p class="Contact_des">부산광역시 해운대구<br>
+                                우동1로 38 1층</p>
+                        </div>
+                        <div class="Contact">
+                            <h3 class="bold_name">CONTACT</h3>
+                            <p class="Contact_des">Mobile: (010) 4837 1926<br>Tel: (051) 742 3812</p>
+                        </div>
+                        <div class="Contact">
+                            <h3 class="bold_name">OPEN HOURS</h3>
+                            <p class="Contact_des">평일: 12:00 - 21:00<br>
+                                주말: 13:00 - 22:00<br>
+                                (매주 화요일 휴무)</p>
+                        </div>
+                        <div class="tags">
+                            <span>전포동</span>
+                            <span>자체제작</span>
+                            <span>Coquette</span>
+                            <span>Romantic</span>
+                            <span>Unisex</span>
+                            <span>20대</span>
+                            <span>30대</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 메쥬르 팝업 -->
+        <div class="store_popup" id="popup_MESURE">
+
+            <div class="popup_inner">
+
+                <!-- 상단바 -->
+                <img class="store_popup_bar" src="./img/store_img/popup_bar.png" alt="팝업 상단바">
+
+                <!-- 닫기 버튼 -->
+                <button class="store_close_btn">
+                    <img src="./img/store_img/close_btn.png" alt="닫기">
+                </button>
+
+                <!-- 팝업 내용 -->
+                <div class="popup_contents">
+
+                    <!-- 왼쪽 : 이미지 슬라이드 -->
+                    <div class="popup_left">
+                        <div class="swiper store_card store_catch">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide ">
+                                    <img class="store_catch_img" src="./img/store_img/mesure.png">
+                                </div>
+                                <div class="swiper-slide ">
+                                    <img src="./img/store_img/novo.png">
+                                </div>
+                                <div class="swiper-slide ">
+                                    <img src="./img/store_img/novo.png">
+                                </div>
+
+                            </div>
+
+
+                            <button class="plus_button"><img src="./img/store_img/plus.png" alt="플러스버튼"></button>
+
+                            <div class="swiper-button-next srote_next"></div>
+                            <div class="swiper-button-prev srote_prev"></div>
+
+                        </div>
+
+
+
+                    </div>
+
+                    <!-- 오른쪽 : 가게 정보 -->
+                    <div class="popup_right">
+                        <div class="store_name">
+                            <div class="text_box">
+                                <p class="name">메쥬르 <span>MESURE</span></p>
+                            </div>
+                            <ul class="icon">
+                                <li><a href="#"><img src="./img/home_icon.svg" width="17px" height="17px"
+                                            alt="home아이콘"></a></li>
+                                <li><a href="https://www.instagram.com" target="_blank"><img src="./img/insta_icon.svg"
+                                            width="17px" height="17px" alt="인스타아이콘"></a></li>
+                            </ul>
+                        </div>
+                        <p class="store_des">
+                            차분한 무드의 빈티지 캐주얼을 중심으로 셀렉하는 로컬 편집샵이다. 시간이 지나도 오래 입을 수 있는 실루엣과 자연스러운 컬러감의 아이템들을 소개하는 공간이다. 부산
+                            로컬 브랜드와 빈티지 제품을 함께 큐레이션하며 편안한 분위기를 담아내고 있는 곳이다.
+                        </p>
+                        <div class="Contact">
+                            <h3 class="bold_name">ADDRESS</h3>
+                            <p class="Contact_des">부산광역시 해운대구<br>
+                                우동1로 38 1층</p>
+                        </div>
+                        <div class="Contact">
+                            <h3 class="bold_name">CONTACT</h3>
+                            <p class="Contact_des">Mobile: (010) 4837 1926<br>Tel: (051) 742 3812</p>
+                        </div>
+                        <div class="Contact">
+                            <h3 class="bold_name">OPEN HOURS</h3>
+                            <p class="Contact_des">평일: 12:00 - 21:00<br>
+                                주말: 13:00 - 22:00<br>
+                                (매주 화요일 휴무)</p>
+                        </div>
+                        <div class="tags">
+                            <span>전포동</span>
+                            <span>자체제작</span>
+                            <span>Coquette</span>
+                            <span>Romantic</span>
+                            <span>Unisex</span>
+                            <span>20대</span>
+                            <span>30대</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 세렝 팝업 -->
+        <div class="store_popup" id="popup_Serein">
+
+            <div class="popup_inner">
+
+                <!-- 상단바 -->
+                <img class="store_popup_bar" src="./img/store_img/popup_bar.png" alt="팝업 상단바">
+
+                <!-- 닫기 버튼 -->
+                <button class="store_close_btn">
+                    <img src="./img/store_img/close_btn.png" alt="닫기">
+                </button>
+
+                <!-- 팝업 내용 -->
+                <div class="popup_contents">
+
+                    <!-- 왼쪽 : 이미지 슬라이드 -->
+                    <div class="popup_left">
+                        <div class="swiper store_card store_catch">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide ">
+                                    <img class="store_catch_img" src="./img/store_img/serein.png">
+                                </div>
+                                <div class="swiper-slide ">
+                                    <img src="./img/store_img/novo.png">
+                                </div>
+                                <div class="swiper-slide ">
+                                    <img src="./img/store_img/novo.png">
+                                </div>
+
+                            </div>
+
+
+                            <button class="plus_button"><img src="./img/store_img/plus.png" alt="플러스버튼"></button>
+
+                            <div class="swiper-button-next srote_next"></div>
+                            <div class="swiper-button-prev srote_prev"></div>
+
+                        </div>
+
+
+
+                    </div>
+
+                    <!-- 오른쪽 : 가게 정보 -->
+                    <div class="popup_right">
+                        <div class="store_name">
+                            <div class="text_box">
+                                <p class="name">세렝 <span>Serein</span></p>
+                            </div>
+                            <ul class="icon">
+                                <li><a href="#"><img src="./img/home_icon.svg" width="17px" height="17px"
+                                            alt="home아이콘"></a></li>
+                                <li><a href="https://www.instagram.com" target="_blank"><img src="./img/insta_icon.svg"
+                                            width="17px" height="17px" alt="인스타아이콘"></a></li>
+                            </ul>
+                        </div>
+                        <p class="store_des">
+                            차분한 무드의 빈티지 캐주얼을 중심으로 셀렉하는 로컬 편집샵이다. 시간이 지나도 오래 입을 수 있는 실루엣과 자연스러운 컬러감의 아이템들을 소개하는 공간이다. 부산
+                            로컬 브랜드와 빈티지 제품을 함께 큐레이션하며 편안한 분위기를 담아내고 있는 곳이다.
+                        </p>
+                        <div class="Contact">
+                            <h3 class="bold_name">ADDRESS</h3>
+                            <p class="Contact_des">부산광역시 해운대구<br>
+                                우동1로 38 1층</p>
+                        </div>
+                        <div class="Contact">
+                            <h3 class="bold_name">CONTACT</h3>
+                            <p class="Contact_des">Mobile: (010) 4837 1926<br>Tel: (051) 742 3812</p>
+                        </div>
+                        <div class="Contact">
+                            <h3 class="bold_name">OPEN HOURS</h3>
+                            <p class="Contact_des">평일: 12:00 - 21:00<br>
+                                주말: 13:00 - 22:00<br>
+                                (매주 화요일 휴무)</p>
+                        </div>
+                        <div class="tags">
+                            <span>전포동</span>
+                            <span>자체제작</span>
+                            <span>Coquette</span>
+                            <span>Romantic</span>
+                            <span>Unisex</span>
+                            <span>20대</span>
+                            <span>30대</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 마렌 팝업 -->
+        <div class="store_popup" id="popup_Maren">
+
+            <div class="popup_inner">
+
+                <!-- 상단바 -->
+                <img class="store_popup_bar" src="./img/store_img/popup_bar.png" alt="팝업 상단바">
+
+                <!-- 닫기 버튼 -->
+                <button class="store_close_btn">
+                    <img src="./img/store_img/close_btn.png" alt="닫기">
+                </button>
+
+                <!-- 팝업 내용 -->
+                <div class="popup_contents">
+
+                    <!-- 왼쪽 : 이미지 슬라이드 -->
+                    <div class="popup_left">
+                        <div class="swiper store_card store_catch">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide ">
+                                    <img class="store_catch_img" src="./img/store_img/maren.png">
+                                </div>
+                                <div class="swiper-slide ">
+                                    <img src="./img/store_img/novo.png">
+                                </div>
+                                <div class="swiper-slide ">
+                                    <img src="./img/store_img/novo.png">
+                                </div>
+
+                            </div>
+
+
+                            <button class="plus_button"><img src="./img/store_img/plus.png" alt="플러스버튼"></button>
+
+                            <div class="swiper-button-next srote_next"></div>
+                            <div class="swiper-button-prev srote_prev"></div>
+
+                        </div>
+
+
+
+                    </div>
+
+                    <!-- 오른쪽 : 가게 정보 -->
+                    <div class="popup_right">
+                        <div class="store_name">
+                            <div class="text_box">
+                                <p class="name">마렌 <span>Maren</span></p>
+                            </div>
+                            <ul class="icon">
+                                <li><a href="#"><img src="./img/home_icon.svg" width="17px" height="17px"
+                                            alt="home아이콘"></a></li>
+                                <li><a href="https://www.instagram.com" target="_blank"><img src="./img/insta_icon.svg"
+                                            width="17px" height="17px" alt="인스타아이콘"></a></li>
+                            </ul>
+                        </div>
+                        <p class="store_des">
+                            차분한 무드의 빈티지 캐주얼을 중심으로 셀렉하는 로컬 편집샵이다. 시간이 지나도 오래 입을 수 있는 실루엣과 자연스러운 컬러감의 아이템들을 소개하는 공간이다. 부산
+                            로컬 브랜드와 빈티지 제품을 함께 큐레이션하며 편안한 분위기를 담아내고 있는 곳이다.
+                        </p>
+                        <div class="Contact">
+                            <h3 class="bold_name">ADDRESS</h3>
+                            <p class="Contact_des">부산광역시 해운대구<br>
+                                우동1로 38 1층</p>
+                        </div>
+                        <div class="Contact">
+                            <h3 class="bold_name">CONTACT</h3>
+                            <p class="Contact_des">Mobile: (010) 4837 1926<br>Tel: (051) 742 3812</p>
+                        </div>
+                        <div class="Contact">
+                            <h3 class="bold_name">OPEN HOURS</h3>
+                            <p class="Contact_des">평일: 12:00 - 21:00<br>
+                                주말: 13:00 - 22:00<br>
+                                (매주 화요일 휴무)</p>
+                        </div>
+                        <div class="tags">
+                            <span>전포동</span>
+                            <span>자체제작</span>
+                            <span>Coquette</span>
+                            <span>Romantic</span>
+                            <span>Unisex</span>
+                            <span>20대</span>
+                            <span>30대</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+    <footer id="footer" data-aos="fade-up" data-aos-duration="700">
+        <div class="Newsletter">
+            <img src="./img/logo.svg" alt="로고">
+        </div>
+        <div id="footer_bottom" class="footer">
+            <div class="inner2">
+                <ul>
+                    <li>
+                        <b>부산광역시 해운대구 우동 123-45 Fitme Studio</b><br>
+                        <b>대표자 |</b> 고하늘<br>
+                        <b>사업자등록번호 |</b> 123-45-67890<br>
+                        <b>통신판매업신고번호 |</b> 2026-부산해운대-0123
+                    </li>
+                </ul>
+                <ul>
+                    <li><b>전화번호 | 051-123-4567</b><br>
+                        <b>이메일 |</b> contact@fitme.kr<br>
+                        <b>사업자등록번호 |</b> 123-45-67890<br>
+                        <b>주소 |</b> 부산광역시 해운대구 우동 123-45 FITME Studio
+                    </li>
+                </ul>
+                <ul>
+                    <li><b>회사소개 | 이용약관 | 개인정보처리방침 | 고객센터 |<br>제휴문의 | 광고문의 | 브랜드 등록</b><br>
+
+                    </li>
+                </ul>
+                <ul class="Copyright">
+                    <li><b>Copyright © 2026 FITME.</b><br>
+                        All rights reserved.
+                    </li>
+                    <li class="icon">
+                        <a href="https://www.instagram.com/" target="_blank"><img src="./img/insta_icon.svg"
+                                alt="인스타그램아이콘" width="23px" height="23px"></a>
+                        <a href="https://www.youtube.com/" target="_blank"><img src="./img/youtube_icon.png"
+                                alt="유튜브아이콘"></a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </footer>
+    <div class="fixed">
+        <a href="#main_banner"><img src="./img/fixed_top.png" alt="페이지상단가기버튼"></a>
+        <a href="#footer_bottom"><img src="./img/fixed_bottom.png" alt="페이지상단가기버튼"></a>
+    </div>
+
+
+
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--공통 script-->
+    <script src="./js/script.js"></script>
+    <script src="./js/community.js"></script>
+</body>
+
+</html>

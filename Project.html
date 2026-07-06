@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <!--DM Sans_font1-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <!--mona_font2-->
+    <link rel="stylesheet" href="./fonts/stylesheet.css">
+    <!--favicon-->
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <!--공통css-->
+    <link rel="stylesheet" href="./css/fitme.css">
+    <!--css-->
+    <link rel="stylesheet" href="./css/project_fitme.css">
+</head>
+
+<body>
+    <header id="header">
+        <h1><a href="./index.html"><img src="./img/logo_header.svg" alt="logo"></a></h1>
+        <ul class="gnb">
+            <li>
+                <a href="./store.html">Store</a>
+                <ul class="sub_menu">
+                    <li><a href="./store.html#explore">Explore</a></li>
+                    <li><a href="./store.html#manthly">Manthly</a></li>
+                    <li><a href="./store.html#interview">Interview</a></li>
+                </ul>
+            </li>
+
+            <li><a href="./Project.html">Project</a></li>
+            <li><a href="./community.html">Community</a>
+                <ul class="sub_menu">
+                    <li><a href="#">Reviews </a></li>
+                    <li><a href="#">Styling</a></li>
+                </ul>
+            </li>
+        </ul>
+        <a href="#" class="catch_btn">
+            <img src="./img/Catch.svg" alt="catch">
+        </a>
+    </header><!--header-->
+
+    <!--catch_popup-->
+    <div id="catch_popup">
+        <div class="popup_inner">
+            <img class="catch_popup_bar" src="./img/catch_popup.png" alt="캐치팝업창상단바">
+            <button class="close_btn"><img src="./img/close_btn.png" alt=""></button>
+
+            <h2>My Catch</h2>
+
+            <div class="tab_menu">
+                <button class="tab active" data-tab="style">
+                    Saved Styling
+                </button>
+
+                <button class="tab" data-tab="saved_store">
+                    Saved Store
+                </button>
+            </div>
+
+            <div class="tab_contents">
+
+                <div class="tab_content active" id="style">
+                    <div id="saved_style_list">
+                        <!-- 하트 누른 스타일 -->
+                    </div>
+                </div>
+
+                <div class="tab_content" id="saved_store">
+                    <div id="saved_store_list">
+                        <!-- 관심 매장 -->
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div><!--catch_popup-->
+
+
+    <main>
+        <section id="project">
+            
+                <img class="main_title" src="./img/project_img/title.svg" alt="메인타이틀" data-aos="zoom-in-up" data-aos-duration="700" data-aos-delay="100">
+
+                <div class="intro inner">
+                    <img src="./img/project_img/img1.png" alt="" data-aos="zoom-in-up" data-aos-duration="700" data-aos-delay="200">
+                    <div class="intro_des" data-aos="zoom-in-up" data-aos-duration="700" data-aos-delay="300">
+                        <ul class="des1">
+                            <li>
+                                <h4>ABOUT</h4>
+                            </li>
+                            <li>
+                                <p>부산 곳곳의 개성 있는 로컬 패션 브랜드와 스토어를 한자리에서 만나볼 수 있는 패션 팝업 프로젝트이다. Catch The Fit은 단순한 쇼핑 공간을
+                                    넘어 브랜드가
+                                    가진 이야기와 취향, 그리고 각자의 스타일을 직접 경험할 수 있는 자리이다. FITME가 큐레이션한 다양한 브랜드와 공간을 통해 부산의 로컬 패션
+                                    문화를 발견하고
+                                    새로운 영감을 얻을 수 있다. 의류, 액세서리, 빈티지 셀렉트샵, 자체 제작 브랜드 등 다양한 패션 공간이 참여하며, 브랜드 제품 전시와 판매, 스타일
+                                    큐레이션 등
+                                    특별한 경험을 제공했다.</p>
+                            </li>
+                        </ul>
+
+                        <ul class="des2">
+                            <li class="date">
+                                <h4>DATE</h4>
+                                <p>2026. 05.05(Tue) - 06.07(Sun)</p>
+                            </li>
+                            <li class="time">
+                                <h4>TIME</h4>
+                                <p>11:00 - 20:00</p>
+                            </li>
+                        </ul>
+
+                        <ul class="des3">
+                            <li>
+                                <h4>LOCATION</h4>
+                            </li>
+                            <li>
+                                <p>부산광역시 전포카페거리 2F FITME POP-UP</p>
+                            </li>
+                        </ul>
+
+
+                    </div>
+                    <img class="pixel_1" src="./img/project_img/pixel.png" alt="픽셀요소"
+                    data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <img class="sub_title" src="./img/project_img/sub_title.png" alt="서브타이틀" data-aos="fade-left" data-aos-offset="400" data-aos-easing="ease-in-sine">
+                </div>
+
+                <div class="content1">
+                    <div class="text"  data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
+                        <h4 class="project_title">CAPTURE THE MOMENT</h4>
+                        <p class="project_des">패션과 공간, 그리고 사람의 취향이 만나는 순간을 기록하는 공간이다.행사를 방문한 누구나 자유롭게 사진을 남기며 자신만의 스타일과
+                            추억을 담아갈 수 있도록 구성하였다.</p>
+                    </div>
+                    <img src="./img/project_img/img2.png" alt="팝업이미지 포토존" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
+
+                </div>
+
+                <div class="content2">
+                    <div class="video_box" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine"><video src="./img/project_img/project_popup_video.mp4" autoplay muted
+                            loop></video>
+                    </div>
+                    <div class="cat_wrap" data-aos="zoom-in" data-aos-duration="700" data-aos-delay="100">
+                        <img class="cat1-1" src="./img/project_img/cat_1.png" alt="고양이 걷는 모습">
+                        <img class="cat1-2" src="./img/project_img/cat_2.png" alt="고양이 놀란 모습">
+                    </div>
+                    <img class="pixel_2" src="./img/project_img/pixel2.png" alt="픽셀요소" data-aos="zoom-in" data-aos-duration="700" data-aos-delay="100">
+                </div>
+
+                <div class="content3 inner">
+                    <div class="text" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
+                        <h4 class="project_title">CURATED SHOP</h4>
+                        <p class="project_des">FITME가 큐레이션한 부산 로컬 브랜드와 스토어를 한자리에서 만나볼 수 있는 공간이다. 빈티지샵, 자체 제작 브랜드, 액세서리
+                            스토어 등 다양한 패션 공간이 참여하여 방문객들이 여러 브랜드의 제품을 직접 둘러보고 구매할 수 있도록 구성하였다. 각 브랜드가 가진 개성과 취향을 경험하며 새로운
+                            스타일을 발견할 수 있는 특별한 쇼핑 공간이다.</p>
+                    </div>
+                    <div class="img">
+                        <img src="./img/project_img/img4.png" alt="팝업이미지스태프" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
+
+                        <div class="cat_wrap" data-aos="zoom-in" data-aos-duration="700" data-aos-delay="100">
+
+                            <img class="cat3-2" src="./img/project_img/cat_3.png" alt="고양이자다가눈뜸"> <img class="cat3-1"
+                                src="./img/project_img/cat_4.png" alt="고양이자는중">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content4 inner">
+                    <img src="./img/project_img/img5.png" alt="팝업스태프이미지" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
+                    <img class="pixel_3" src="./img/project_img/pixel3.png" alt="픽셀요소" data-aos="zoom-in" data-aos-duration="700" data-aos-delay="100">
+                    <img class="pixel_4" src="./img/project_img/pixel4.png" alt="픽셀요소" >
+                </div>
+
+                <div class="content5 inner">
+                    <div class="text" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
+                        <h4 class="project_title">SNS EVENT</h4>
+                        <p class="project_des">팝업 현장에서 마음에 드는 스타일을 착용하고 인증 사진을 촬영한 후, 지정 해시태그와 함께 인스타그램에 업로드하면 참여할 수 있는
+                            이벤트이다.참여자에게는 추첨을 통해 다양한 경품과 브랜드 굿즈를 제공하였다.</p>
+                    </div>
+                    <div class="img">
+                        <img src="./img/project_img/img6.png" alt="팝업이미지스태프" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
+                        <img class="tree" src="./img/project_img/tree.png" alt="나무픽셀"data-aos="zoom-in" data-aos-duration="700" data-aos-delay="500 ">
+                        <img class="bubble1" src="./img/project_img/Text_bubble1.png" alt="빈티지" data-aos="zoom-in" data-aos-duration="700" data-aos-delay="100">
+                        <img class="bubble2" src="./img/project_img/Text_bubble2.png" alt="로컬옷가게" data-aos="zoom-in" data-aos-duration="700" data-aos-delay="200">
+                        <img class="bubble3" src="./img/project_img/Text_bubble3.png" alt="취향탐색" data-aos="zoom-in" data-aos-duration="700" data-aos-delay="300">
+                        <img class="bubble4" src="./img/project_img/Text_bubble4.png" alt="편집샵" data-aos="zoom-in" data-aos-duration="700" data-aos-delay="400">
+
+                    </div>
+                </div>
+
+                <div class="content6">
+                    <img src="./img/project_img/img7.png" alt="팝업스태프옷정리하는중" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
+                    <div class="text" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
+                        <h4 class="project_title">STAFF EDITION</h4>
+                        <p class="project_des">행사를 위해 제작한 팝업 전용 의상으로 Catch The Fit의 그래픽과 메시지를 담아 브랜드 아이덴티티를 시각적으로 전달하고,
+                            현장 운영 인력과 공간이 하나의 경험으로 이어질 수 있도록 기획하였다.</p>
+                    </div>
+                    <img class="cat6-1" src="./img/project_img/cat_6-1.png" alt="고양이 미끄러짐">
+                    <img class="cat6-2" src="./img/project_img/cat_6-2.png" alt="고양이 미끄러짐">
+                </div>
+
+                <div class="content7">
+                    <img src="./img/project_img/img8.png" alt="팝업스태프들" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
+                    <img class="pixel_5" src="./img/project_img/pixel5.png" alt="픽셀요소" data-aos="zoom-in" data-aos-duration="700" data-aos-delay="100">
+
+                </div>
+
+                <div class="ani">
+                    <div class="text_box">
+                        <div class="text_box2">
+                            <div>
+                                <p><span>#</span> WORKWEAR</p>
+                                <p><span>#</span> VINTAGE</p>
+                                <p><span>#</span> STREET</p>
+                                <p><span>#</span> ARCHIVE</p>
+                                <p><span>#</span> LOCAL</p>
+                                <p><span>#</span> MINIMAL</p>
+                                <p><span>#</span> CASUAL</p>
+                                <p><span>#</span> ARCHIVE</p>
+                                <p><span>#</span> LAYERED</p>
+                            </div>
+                            <div>
+                                <p><span>#</span> WORKWEAR</p>
+                                <p><span>#</span> VINTAGE</p>
+                                <p><span>#</span> STREET</p>
+                                <p><span>#</span> ARCHIVE</p>
+                                <p><span>#</span> LOCAL</p>
+                                <p><span>#</span> MINIMAL</p>
+                                <p><span>#</span> CASUAL</p>
+                                <p><span>#</span> ARCHIVE</p>
+                                <p><span>#</span> LAYERED</p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--ani-->
+
+                <div class="content8">
+                    <div class="img_left">
+                        <div data-aos="zoom-in" data-aos-duration="700" data-aos-delay="100">
+                            <span>02</span>
+                            <img src="./img/project_img/img9.png" alt="" >
+                        </div>
+
+                        <p data-aos="zoom-in" data-aos-duration="700" data-aos-delay="300">
+                            <b>01</b> Exterior Banner,<br>
+                            <b>02</b> Street Flag Banner,<br>
+                            <b>03</b> Digital Signage,<br>
+                            <b>by Fitme</b>
+                        </p>
+                    </div>
+                    <div class="img_right">
+                        <div data-aos="zoom-in" data-aos-duration="700" data-aos-delay="0">
+                            <span>01</span>
+                            <img src="./img/project_img/img10.png" alt="외벽배너">
+                        </div>
+                        <div data-aos="zoom-in" data-aos-duration="700" data-aos-delay="200">
+                            <img src="./img/project_img/img11.png" alt="">
+                            <span>03</span>
+                        </div>
+                    </div>
+                    <img class="cat_7" src="./img/project_img/cat_7.png" alt="">
+                </div>
+
+                <div class="content9">
+                    <div class="container">
+                        <div data-aos="zoom-in" data-aos-duration="700" data-aos-delay="0">
+                            <span>04</span>
+                            <img src="./img/project_img/img12.png" alt="">
+
+                        </div>
+                        <div data-aos="zoom-in" data-aos-duration="700" data-aos-delay="100">
+                            <span>04</span>
+                            <img src="./img/project_img/img13.png" alt="">
+
+                        </div>
+                        <div class="text_box" data-aos="zoom-in" data-aos-duration="700" data-aos-delay="200">
+                            <p><b>04</b> Pop-up Staff Tee,<br>
+                                <b>05</b> Fitme LookBook,<br>
+                                <b>06</b> Shopping Bag,<br>
+                                <b>07</b> Staff ID Card<br>
+                                <b>by Fitme</b>
+                            </p>
+                        </div>
+
+                        <div data-aos="zoom-in" data-aos-duration="700" data-aos-delay="300">
+                            <img src="./img/project_img/img14.png" alt="">
+                            <span>05</span>
+                        </div>
+                        <div data-aos="zoom-in" data-aos-duration="700" data-aos-delay="400">
+                            <img src="./img/project_img/img15.png" alt="">
+                            <span>06</span>
+                        </div>
+                        <div data-aos="zoom-in" data-aos-duration="700" data-aos-delay="500">
+                            <img src="./img/project_img/img16.png" alt="">
+                            <span>07</span>
+                        </div>
+                        <img class="pixel_6" src="./img/project_img/pixel6.png" alt="">
+                    </div>
+
+                   
+
+
+                </div>
+                
+                <div class="credits inner" data-aos="zoom-in-up" data-aos-duration="700" >
+                        <h1>CREDITS</h1>
+                        <div>
+                            <table class="PROJECT_TEAM">
+                                <tr>
+                                    <th rowspan="5">PROJECT TEAM</th>
+                                    <td class="name">Haneul Ko</td>
+                                    <td class="des">Project Director</td>
+                                </tr>
+                                <tr>
+                                    <td class="name">Seoyeon Kim</td>
+                                    <td class="des">Brand Planning</td>
+                                </tr>
+                                <tr>
+                                    <td class="name">Minjun Park</td>
+                                    <td class="des">Visual Design</td>
+                                </tr>
+                                <tr>
+                                    <td class="name">Jiyoon Lee</td>
+                                    <td class="des">Content Editor</td>
+                                </tr>
+                                <tr>
+                                    <td class="name">Woosung Jung</td>
+                                    <td class="des">Web Design</td>
+                                </tr>
+                            </table>
+                            <table class="PROJECT_TEAM">
+                                <tr>
+                                    <th rowspan="5">PARTICIPATING STORES</th>
+                                    <td class="name">NUVO</td>
+                                    <td class="des">Exclusive Pop-up Collection</td>
+                                </tr>
+                                <tr>
+                                    <td class="name">MOOD ATTIC</td>
+                                    <td class="des">Vintage Archive Exhibition</td>
+                                </tr>
+                                <tr>
+                                    <td class="name">ARCHIVE B</td>
+                                    <td class="des">Local Designer Showcase</td>
+                                </tr>
+                                <tr>
+                                    <td class="name">ROOM33</td>
+                                    <td class="des">Style Consultation & Display</td>
+                                </tr>
+                                <tr>
+                                    <td class="name">LOCAL STANDARD</td>
+                                    <td class="des">Accessories&Lifestyle Goods</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <img class="cat_8" src="./img/project_img/cat_8.png" alt="">
+
+                    </div>
+                   
+        </section>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer id="footer" data-aos="fade-up" data-aos-duration="700">
+        <div class="Newsletter">
+            <img src="./img/logo.svg" alt="로고">
+        </div>
+        <div id="footer_bottom" class="footer">
+            <div class="inner2">
+                <ul>
+                    <li>
+                        <b>부산광역시 해운대구 우동 123-45 Fitme Studio</b><br>
+                        <b>대표자 |</b> 고하늘<br>
+                        <b>사업자등록번호 |</b> 123-45-67890<br>
+                        <b>통신판매업신고번호 |</b> 2026-부산해운대-0123
+                    </li>
+                </ul>
+                <ul>
+                    <li><b>전화번호 | 051-123-4567</b><br>
+                        <b>이메일 |</b> contact@fitme.kr<br>
+                        <b>사업자등록번호 |</b> 123-45-67890<br>
+                        <b>주소 |</b> 부산광역시 해운대구 우동 123-45 FITME Studio
+                    </li>
+                </ul>
+                <ul>
+                    <li><b>회사소개 | 이용약관 | 개인정보처리방침 | 고객센터 |<br>제휴문의 | 광고문의 | 브랜드 등록</b><br>
+
+                    </li>
+                </ul>
+                <ul class="Copyright">
+                    <li><b>Copyright © 2026 FITME.</b><br>
+                        All rights reserved.
+                    </li>
+                    <li class="icon">
+                        <a href="https://www.instagram.com/" target="_blank"><img src="./img/insta_icon.svg"
+                                alt="인스타그램아이콘" width="23px" height="23px"></a>
+                        <a href="https://www.youtube.com/" target="_blank"><img src="./img/youtube_icon.png"
+                                alt="유튜브아이콘"></a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </footer>
+    <div class="fixed">
+        <a href="#project"><img src="./img/fixed_top.png" alt="페이지상단가기버튼"></a>
+        <a href="#footer_bottom"><img src="./img/fixed_bottom.png" alt="페이지상단가기버튼"></a>
+    </div>
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--공통 script-->
+    <script src="./js/script.js"></script>
+    <script src="./js/project.js"></script>
+</body>
+
+</html>

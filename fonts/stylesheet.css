@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'MonaS8x12';
+    src: url('MonaS8x12-Regular.eot');
+    src: url('MonaS8x12-Regular.eot?#iefix') format('embedded-opentype'),
+        url('MonaS8x12-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MonaS10';
+    src: url('MonaS10-Regular.eot');
+    src: url('MonaS10-Regular.eot?#iefix') format('embedded-opentype'),
+        url('MonaS10-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MonaS10';
+    src: url('MonaS10-Bold.eot');
+    src: url('MonaS10-Bold.eot?#iefix') format('embedded-opentype'),
+        url('MonaS10-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MonaS10x12';
+    src: url('MonaS10x12-Regular.eot');
+    src: url('MonaS10x12-Regular.eot?#iefix') format('embedded-opentype'),
+        url('MonaS10x12-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MonaS10x12';
+    src: url('MonaS10x12-Bold.eot');
+    src: url('MonaS10x12-Bold.eot?#iefix') format('embedded-opentype'),
+        url('MonaS10x12-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MonaS12';
+    src: url('MonaS12-Bold.eot');
+    src: url('MonaS12-Bold.eot?#iefix') format('embedded-opentype'),
+        url('MonaS12-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MonaS12';
+    src: url('MonaS12-Regular.eot');
+    src: url('MonaS12-Regular.eot?#iefix') format('embedded-opentype'),
+        url('MonaS12-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

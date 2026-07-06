@@ -1,0 +1,1346 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>store</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <!--DM Sans_font1-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <!--mona_font2-->
+    <link rel="stylesheet" href="./fonts/stylesheet.css">
+    <!--favicon-->
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <!--공통css-->
+    <link rel="stylesheet" href="./css/fitme.css">
+    <!--css-->
+    <link rel="stylesheet" href="./css/store_fitme.css">
+
+</head>
+
+<body>
+    <header id="header">
+        <h1><a href="./index.html"><img src="./img/logo_header.svg" alt="logo"></a></h1>
+        <ul class="gnb">
+            <li>
+                <a href="./store.html">Store</a>
+                <ul class="sub_menu">
+                    <li><a href="./store.html#explore">Explore</a></li>
+                    <li><a href="./store.html#manthly">Manthly</a></li>
+                    <li><a href="./store.html#interview">Interview</a></li>
+                </ul>
+            </li>
+
+            <li><a href="./Project.html">Project</a></li>
+            <li><a href="./community.html">Community</a>
+                <ul class="sub_menu">
+                    <li><a href="./community.html#review">Reviews </a></li>
+                    <li><a href="./community.html#styling">Styling</a></li>
+                </ul>
+            </li>
+        </ul>
+        <a href="#" class="catch_btn">
+            <img src="./img/Catch.svg" alt="catch">
+        </a>
+    </header><!--header-->
+
+    <!--catch_popup-->
+    <div id="catch_popup">
+        <div class="popup_inner">
+            <img class="catch_popup_bar" src="./img/catch_popup.png" alt="캐치팝업창상단바">
+            <button class="close_btn"><img src="./img/close_btn.png" alt=""></button>
+
+            <h2>My Catch</h2>
+
+            <div class="tab_menu">
+                <button class="tab active" data-tab="style">
+                    Saved Styling
+                </button>
+
+                <button class="tab" data-tab="store">
+                    Saved Store
+                </button>
+            </div>
+
+            <div class="tab_contents">
+
+                <div class="tab_content active" id="style">
+                    <div id="saved_style_list">
+                        <!-- 하트 누른 스타일 -->
+                    </div>
+                </div>
+
+                <div class="tab_content" id="store">
+                    <div id="saved_store_list">
+                        <!-- 관심 매장 -->
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div><!--catch_popup-->
+    <main>
+        <section id="main_banner">
+            <div class="text_box">
+                <img src="./img/store_img/Store.svg" alt="메뉴이름">
+                <h1>부산의 로컬 패션을 한눈에.</h1>
+                <p>숨겨진 편집숍부터 개성 있는 빈티지 숍까지,<br>
+                    다양한 공간을 탐험하며 당신의 취향에 맞는 스타일을 발견해보세요.</p>
+                <img class="bottom_Arrow" src="./img/store_img/bottom_Arrow.svg" alt="아래보기화살표">
+            </div>
+        </section><!--main_banner-->
+
+        <section id="explore" class="inner" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
+            <img src="./img/store_img/Explore.svg" alt="explore">
+            <div class="filter">
+                <div class="filter-group">
+                    <span class="title">Area</span>
+
+                    <div class="tags">
+                        <button type="button">전포동</button>
+                        <button type="button">해운대</button>
+                        <button type="button">광안리</button>
+                        <button type="button">남포동</button>
+                        <button type="button">연산동</button>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <span class="title">Mood</span>
+
+                    <div class="tags">
+                        <button type="button">Cozy</button>
+                        <button type="button">Classic</button>
+                        <button type="button">Natural</button>
+                        <button type="button">Trendy</button>
+                        <button type="button">Quiet</button>
+                        <button type="button">Creative</button>
+                        <button type="button">Romantic</button>
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <span class="title">Category</span>
+
+                    <div class="tags">
+                        <button type="button">빈티지샵</button>
+                        <button type="button">자체제작</button>
+                        <button type="button">소품샵</button>
+                        <button type="button">편집샵</button>
+                        <button type="button">로컬브랜드</button>
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <span class="title">Gender</span>
+
+                    <div class="tags">
+                        <button type="button">Unisex</button>
+                        <button type="button">Womenswear</button>
+                        <button type="button">Menswear</button>
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <span class="title">Style</span>
+
+                    <div class="tags">
+                        <button type="button">Unique</button>
+                        <button type="button">Street</button>
+                        <button type="button">Casual</button>
+                        <button type="button">Coquette</button>
+                        <button type="button">Modern</button>
+                        <button type="button">Y2K</button>
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <span class="title">Age</span>
+
+                    <div class="tags">
+                        <button type="button">10대</button>
+                        <button type="button">20대</button>
+                        <button type="button">30대</button>
+                        <button type="button">40대 이상</button>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- 카드 영역 -->
+            <div class="store_list ">
+
+
+                <!--누보-->
+                <div class="swiper store_card store_catch">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img class="store_catch_img" src="./img/store_img/nuvo.png">
+
+                        </div>
+                        <div class="swiper-slide ">
+                            <img src="./img/store_img/nuvo2.png">
+                        </div>
+                        <div class="swiper-slide ">
+                            <img src="./img/store_img/nuvo3.png">
+                        </div>
+
+                    </div>
+
+                    <div class="store_name">
+                        <div class="text_box">
+                            <p class="name"><span>누보</span> NUVO</p>
+                        </div>
+                        <button type="button" class="popup_btn" data-popup="popup_nuvo"><img
+                                src="./img/store_img/View_icon.svg" alt="돋보기아이콘"></button>
+                    </div>
+
+
+                    <button class="plus_button"><img src="./img/store_img/plus.png" alt="플러스버튼"></button>
+
+                    <div class="swiper-button-next srote_next"></div>
+                    <div class="swiper-button-prev srote_prev"></div>
+
+                </div>
+
+                <!--로제트-->
+                <div class="swiper store_card store_catch">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide ">
+                            <img class="store_catch_img" src="./img/store_img/rosette.png">
+                        </div>
+                        <div class="swiper-slide ">
+                            <img src="./img/store_img/rosette2.png">
+                        </div>
+                        <div class="swiper-slide ">
+                            <img src="./img/store_img/rosette3.png">
+                        </div>
+
+                    </div>
+                    <div class="store_name">
+                        <div class="text_box">
+                            <p class="name"><span>로제트</span> Rosette</p>
+                        </div>
+                        <button type="button" class="popup_btn" data-popup="popup_rosette"><img
+                                src="./img/store_img/View_icon.svg" alt="돋보기아이콘"></button>
+                    </div>
+
+                    <button class="plus_button"><img src="./img/store_img/plus.png" alt="플러스버튼"></button>
+
+
+                    <div class="swiper-button-next srote_next"></div>
+                    <div class="swiper-button-prev srote_prev"></div>
+                </div>
+
+                <!--모로우-->
+                <div class="swiper store_card store_catch">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide ">
+                            <img class="store_catch_img" src="./img/store_img/morrow.png">
+                        </div>
+                        <div class="swiper-slide ">
+                            <img src="./img/store_img/morrow2.png">
+                        </div>
+                        <div class="swiper-slide ">
+                            <img src="./img/store_img/morrow3.png">
+                        </div>
+
+                    </div>
+                    <div class="store_name">
+                        <div class="text_box">
+                            <p class="name"><span>모로우</span> Morrow</p>
+                        </div>
+                        <button type="button" class="popup_btn" data-popup="popup_morrow"><img
+                                src="./img/store_img/View_icon.svg" alt="돋보기아이콘"></button>
+                    </div>
+                    <button class="plus_button"><img src="./img/store_img/plus.png" alt="플러스버튼"></button>
+
+
+                    <div class="swiper-button-next srote_next"></div>
+                    <div class="swiper-button-prev srote_prev"></div>
+                </div>
+
+                <!--오브-->
+                <div class="swiper store_card store_catch">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide ">
+                            <img class="store_catch_img" src="./img/store_img/aube.png">
+                        </div>
+                        <div class="swiper-slide ">
+                            <img src="./img/store_img/novo.png">
+                        </div>
+                        <div class="swiper-slide ">
+                            <img src="./img/store_img/novo.png">
+                        </div>
+
+                    </div>
+                    <div class="store_name">
+                        <div class="text_box">
+                            <p class="name"><span>오브</span> AUBE</p>
+                        </div>
+                        <button type="button" class="popup_btn" data-popup="popup_AUBE"><img
+                                src="./img/store_img/View_icon.svg" alt="돋보기아이콘"></button>
+                    </div>
+                    <button class="plus_button"><img src="./img/store_img/plus.png" alt="플러스버튼"></button>
+
+
+                    <div class="swiper-button-next srote_next"></div>
+                    <div class="swiper-button-prev srote_prev"></div>
+                </div>
+
+                <!--포름-->
+                <div class="swiper store_card store_catch">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide ">
+                            <img class="store_catch_img" src="./img/store_img/forme.png">
+                        </div>
+                        <div class="swiper-slide ">
+                            <img src="./img/store_img/novo.png">
+                        </div>
+                        <div class="swiper-slide ">
+                            <img src="./img/store_img/novo.png">
+                        </div>
+
+                    </div>
+                    <div class="store_name">
+                        <div class="text_box">
+                            <p class="name"><span>포름</span> FORME</p>
+                        </div>
+                        <button type="button" class="popup_btn" data-popup="popup_FORME"><img
+                                src="./img/store_img/View_icon.svg" alt="돋보기아이콘"></button>
+                    </div>
+                    <button class="plus_button"><img src="./img/store_img/plus.png" alt="플러스버튼"></button>
+
+
+                    <div class="swiper-button-next srote_next"></div>
+                    <div class="swiper-button-prev srote_prev"></div>
+                </div>
+
+                <!--메쥬르-->
+                <div class="swiper store_card store_catch">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide ">
+                            <img class="store_catch_img" src="./img/store_img/mesure.png">
+                        </div>
+                        <div class="swiper-slide ">
+                            <img src="./img/store_img/novo.png">
+                        </div>
+                        <div class="swiper-slide ">
+                            <img src="./img/store_img/novo.png">
+                        </div>
+
+                    </div>
+                    <div class="store_name">
+                        <div class="text_box">
+                            <p class="name"><span>메쥬르</span> MESURE</p>
+                        </div>
+                        <button type="button" class="popup_btn" data-popup="popup_MESURE"><img
+                                src="./img/store_img/View_icon.svg" alt="돋보기아이콘"></button>
+                    </div>
+                    <button class="plus_button"><img src="./img/store_img/plus.png" alt="플러스버튼"></button>
+
+
+                    <div class="swiper-button-next srote_next"></div>
+                    <div class="swiper-button-prev srote_prev"></div>
+                </div>
+
+                <!--세렝-->
+                <div class="swiper store_card store_catch">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide ">
+                            <img class="store_catch_img" src="./img/store_img/serein.png">
+                        </div>
+                        <div class="swiper-slide ">
+                            <img src="./img/store_img/novo.png">
+                        </div>
+                        <div class="swiper-slide ">
+                            <img src="./img/store_img/novo.png">
+                        </div>
+
+                    </div>
+                    <div class="store_name">
+                        <div class="text_box">
+                            <p class="name"><span>세렝</span> Serein</p>
+                        </div>
+                        <button type="button" class="popup_btn" data-popup="popup_Serein"><img
+                                src="./img/store_img/View_icon.svg" alt="돋보기아이콘"></button>
+                    </div>
+                    <button class="plus_button"><img src="./img/store_img/plus.png" alt="플러스버튼"></button>
+
+
+                    <div class="swiper-button-next srote_next"></div>
+                    <div class="swiper-button-prev srote_prev"></div>
+                </div>
+
+                <!--마렌-->
+                <div class="swiper store_card store_catch">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide ">
+                            <img class="store_catch_img" src="./img/store_img/maren.png">
+                        </div>
+                        <div class="swiper-slide ">
+                            <img src="./img/store_img/novo.png">
+                        </div>
+                        <div class="swiper-slide ">
+                            <img src="./img/store_img/novo.png">
+                        </div>
+
+                    </div>
+                    <div class="store_name">
+                        <div class="text_box">
+                            <p class="name"><span>마렌</span> Maren</p>
+                        </div>
+                        <button type="button" class="popup_btn" data-popup="popup_Maren"><img
+                                src="./img/store_img/View_icon.svg" alt="돋보기아이콘"></button>
+                    </div>
+                    <button class="plus_button"><img src="./img/store_img/plus.png" alt="플러스버튼"></button>
+
+
+                    <div class="swiper-button-next srote_next"></div>
+                    <div class="swiper-button-prev srote_prev"></div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+        Store Detail Popup
+========================= -->
+
+        <!-- 누보 팝업 -->
+        <div class="store_popup" id="popup_nuvo">
+
+            <div class="popup_inner">
+
+                <!-- 상단바 -->
+                <img class="store_popup_bar" src="./img/store_img/popup_bar.png" alt="팝업 상단바">
+
+                <!-- 닫기 버튼 -->
+                <button class="store_close_btn">
+                    <img src="./img/store_img/close_btn.png" alt="닫기">
+                </button>
+
+                <!-- 팝업 내용 -->
+                <div class="popup_contents">
+
+                    <!-- 왼쪽 : 이미지 슬라이드 -->
+                    <div class="popup_left">
+                        <div class="swiper store_card store_catch">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img class="store_catch_img" src="./img/store_img/nuvo.png">
+
+                                </div>
+                                <div class="swiper-slide ">
+                                    <img src="./img/store_img/nuvo2.png">
+                                </div>
+                                <div class="swiper-slide ">
+                                    <img src="./img/store_img/nuvo3.png">
+                                </div>
+
+                            </div>
+
+                            <button class="plus_button"><img src="./img/store_img/plus.png" alt="플러스버튼"></button>
+
+                            <div class="swiper-button-next srote_next"></div>
+                            <div class="swiper-button-prev srote_prev"></div>
+
+                        </div>
+
+
+
+                    </div>
+
+                    <!-- 오른쪽 : 가게 정보 -->
+                    <div class="popup_right">
+                        <div class="store_name">
+                            <div class="text_box">
+                                <p class="name">누보 <span>NUVO</span></p>
+                            </div>
+                            <ul class="icon">
+                                <li><a href="#"><img src="./img/home_icon.svg" width="17px" height="17px"
+                                            alt="home아이콘"></a></li>
+                                <li><a href="https://www.instagram.com" target="_blank"><img src="./img/insta_icon.svg"
+                                            width="17px" height="17px" alt="인스타아이콘"></a></li>
+                            </ul>
+                        </div>
+                        <p class="store_des">
+                            차분한 무드의 빈티지 캐주얼을 중심으로 셀렉하는 로컬 편집샵이다. 시간이 지나도 오래 입을 수 있는 실루엣과 자연스러운 컬러감의 아이템들을 소개하는 공간이다. 부산
+                            로컬 브랜드와 빈티지 제품을 함께 큐레이션하며 편안한 분위기를 담아내고 있는 곳이다.
+                        </p>
+                        <div class="Contact">
+                            <h3 class="bold_name">ADDRESS</h3>
+                            <p class="Contact_des">부산광역시 해운대구<br>
+                                우동1로 38 1층</p>
+                        </div>
+                        <div class="Contact">
+                            <h3 class="bold_name">CONTACT</h3>
+                            <p class="Contact_des">Mobile: (010) 4837 1926<br>Tel: (051) 742 3812</p>
+                        </div>
+                        <div class="Contact">
+                            <h3 class="bold_name">OPEN HOURS</h3>
+                            <p class="Contact_des">평일: 12:00 - 21:00<br>
+                                주말: 13:00 - 22:00<br>
+                                (매주 화요일 휴무)</p>
+                        </div>
+                        <div class="tags">
+                            <span>전포동</span>
+                            <span>자체제작</span>
+                            <span>Coquette</span>
+                            <span>Romantic</span>
+                            <span>Unisex</span>
+                            <span>20대</span>
+                            <span>30대</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 로제트 팝업 -->
+        <div class="store_popup" id="popup_rosette">
+
+            <div class="popup_inner">
+
+                <!-- 상단바 -->
+                <img class="store_popup_bar" src="./img/store_img/popup_bar.png" alt="팝업 상단바">
+
+                <!-- 닫기 버튼 -->
+                <button class="store_close_btn">
+                    <img src="./img/store_img/close_btn.png" alt="닫기">
+                </button>
+
+                <!-- 팝업 내용 -->
+                <div class="popup_contents">
+
+                    <!-- 왼쪽 : 이미지 슬라이드 -->
+                    <div class="popup_left">
+                        <div class="swiper store_card store_catch">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide ">
+                                    <img class="store_catch_img" src="./img/store_img/rosette.png">
+                                </div>
+                                <div class="swiper-slide ">
+                                    <img src="./img/store_img/rosette2.png">
+                                </div>
+                                <div class="swiper-slide ">
+                                    <img src="./img/store_img/rosette3.png">
+                                </div>
+
+                            </div>
+
+
+                            <button class="plus_button"><img src="./img/store_img/plus.png" alt="플러스버튼"></button>
+
+                            <div class="swiper-button-next srote_next"></div>
+                            <div class="swiper-button-prev srote_prev"></div>
+
+                        </div>
+
+
+
+                    </div>
+
+                    <!-- 오른쪽 : 가게 정보 -->
+                    <div class="popup_right">
+                        <div class="store_name">
+                            <div class="text_box">
+                                <p class="name">로제트 <span>Rosette</span></p>
+                            </div>
+                            <ul class="icon">
+                                <li><a href="#"><img src="./img/home_icon.svg" width="17px" height="17px"
+                                            alt="home아이콘"></a></li>
+                                <li><a href="https://www.instagram.com" target="_blank"><img src="./img/insta_icon.svg"
+                                            width="17px" height="17px" alt="인스타아이콘"></a></li>
+                            </ul>
+                        </div>
+                        <p class="store_des">
+                            차분한 무드의 빈티지 캐주얼을 중심으로 셀렉하는 로컬 편집샵이다. 시간이 지나도 오래 입을 수 있는 실루엣과 자연스러운 컬러감의 아이템들을 소개하는 공간이다. 부산
+                            로컬 브랜드와 빈티지 제품을 함께 큐레이션하며 편안한 분위기를 담아내고 있는 곳이다.
+                        </p>
+                        <div class="Contact">
+                            <h3 class="bold_name">ADDRESS</h3>
+                            <p class="Contact_des">부산광역시 해운대구<br>
+                                우동1로 38 1층</p>
+                        </div>
+                        <div class="Contact">
+                            <h3 class="bold_name">CONTACT</h3>
+                            <p class="Contact_des">Mobile: (010) 4837 1926<br>Tel: (051) 742 3812</p>
+                        </div>
+                        <div class="Contact">
+                            <h3 class="bold_name">OPEN HOURS</h3>
+                            <p class="Contact_des">평일: 12:00 - 21:00<br>
+                                주말: 13:00 - 22:00<br>
+                                (매주 화요일 휴무)</p>
+                        </div>
+                        <div class="tags">
+                            <span>전포동</span>
+                            <span>자체제작</span>
+                            <span>Coquette</span>
+                            <span>Romantic</span>
+                            <span>Unisex</span>
+                            <span>20대</span>
+                            <span>30대</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 모로우 팝업 -->
+        <div class="store_popup" id="popup_morrow">
+
+            <div class="popup_inner">
+
+                <!-- 상단바 -->
+                <img class="store_popup_bar" src="./img/store_img/popup_bar.png" alt="팝업 상단바">
+
+                <!-- 닫기 버튼 -->
+                <button class="store_close_btn">
+                    <img src="./img/store_img/close_btn.png" alt="닫기">
+                </button>
+
+                <!-- 팝업 내용 -->
+                <div class="popup_contents">
+
+                    <!-- 왼쪽 : 이미지 슬라이드 -->
+                    <div class="popup_left">
+                        <div class="swiper store_card store_catch">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide ">
+                                    <img class="store_catch_img" src="./img/store_img/morrow.png">
+                                </div>
+                                <div class="swiper-slide ">
+                                    <img src="./img/store_img/morrow2.png">
+                                </div>
+                                <div class="swiper-slide ">
+                                    <img src="./img/store_img/morrow3.png">
+                                </div>
+
+                            </div>
+
+
+                            <button class="plus_button"><img src="./img/store_img/plus.png" alt="플러스버튼"></button>
+
+                            <div class="swiper-button-next srote_next"></div>
+                            <div class="swiper-button-prev srote_prev"></div>
+
+                        </div>
+
+
+
+                    </div>
+
+                    <!-- 오른쪽 : 가게 정보 -->
+                    <div class="popup_right">
+                        <div class="store_name">
+                            <div class="text_box">
+                                <p class="name">모로우 <span>Morrow</span></p>
+                            </div>
+                            <ul class="icon">
+                                <li><a href="#"><img src="./img/home_icon.svg" width="17px" height="17px"
+                                            alt="home아이콘"></a></li>
+                                <li><a href="https://www.instagram.com" target="_blank"><img src="./img/insta_icon.svg"
+                                            width="17px" height="17px" alt="인스타아이콘"></a></li>
+                            </ul>
+                        </div>
+                        <p class="store_des">
+                            차분한 무드의 빈티지 캐주얼을 중심으로 셀렉하는 로컬 편집샵이다. 시간이 지나도 오래 입을 수 있는 실루엣과 자연스러운 컬러감의 아이템들을 소개하는 공간이다. 부산
+                            로컬 브랜드와 빈티지 제품을 함께 큐레이션하며 편안한 분위기를 담아내고 있는 곳이다.
+                        </p>
+                        <div class="Contact">
+                            <h3 class="bold_name">ADDRESS</h3>
+                            <p class="Contact_des">부산광역시 해운대구<br>
+                                우동1로 38 1층</p>
+                        </div>
+                        <div class="Contact">
+                            <h3 class="bold_name">CONTACT</h3>
+                            <p class="Contact_des">Mobile: (010) 4837 1926<br>Tel: (051) 742 3812</p>
+                        </div>
+                        <div class="Contact">
+                            <h3 class="bold_name">OPEN HOURS</h3>
+                            <p class="Contact_des">평일: 12:00 - 21:00<br>
+                                주말: 13:00 - 22:00<br>
+                                (매주 화요일 휴무)</p>
+                        </div>
+                        <div class="tags">
+                            <span>전포동</span>
+                            <span>자체제작</span>
+                            <span>Coquette</span>
+                            <span>Romantic</span>
+                            <span>Unisex</span>
+                            <span>20대</span>
+                            <span>30대</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 오브 팝업 -->
+        <div class="store_popup" id="popup_AUBE">
+
+            <div class="popup_inner">
+
+                <!-- 상단바 -->
+                <img class="store_popup_bar" src="./img/store_img/popup_bar.png" alt="팝업 상단바">
+
+                <!-- 닫기 버튼 -->
+                <button class="store_close_btn">
+                    <img src="./img/store_img/close_btn.png" alt="닫기">
+                </button>
+
+                <!-- 팝업 내용 -->
+                <div class="popup_contents">
+
+                    <!-- 왼쪽 : 이미지 슬라이드 -->
+                    <div class="popup_left">
+                        <div class="swiper store_card store_catch">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide ">
+                                    <img class="store_catch_img" src="./img/store_img/aube.png">
+                                </div>
+                                <div class="swiper-slide ">
+                                    <img src="./img/store_img/novo.png">
+                                </div>
+                                <div class="swiper-slide ">
+                                    <img src="./img/store_img/novo.png">
+                                </div>
+
+                            </div>
+
+
+                            <button class="plus_button"><img src="./img/store_img/plus.png" alt="플러스버튼"></button>
+
+                            <div class="swiper-button-next srote_next"></div>
+                            <div class="swiper-button-prev srote_prev"></div>
+
+                        </div>
+
+
+
+                    </div>
+
+                    <!-- 오른쪽 : 가게 정보 -->
+                    <div class="popup_right">
+                        <div class="store_name">
+                            <div class="text_box">
+                                <p class="name">오브 <span>AUBE</span></p>
+                            </div>
+                            <ul class="icon">
+                                <li><a href="#"><img src="./img/home_icon.svg" width="17px" height="17px"
+                                            alt="home아이콘"></a></li>
+                                <li><a href="https://www.instagram.com" target="_blank"><img src="./img/insta_icon.svg"
+                                            width="17px" height="17px" alt="인스타아이콘"></a></li>
+                            </ul>
+                        </div>
+                        <p class="store_des">
+                            차분한 무드의 빈티지 캐주얼을 중심으로 셀렉하는 로컬 편집샵이다. 시간이 지나도 오래 입을 수 있는 실루엣과 자연스러운 컬러감의 아이템들을 소개하는 공간이다. 부산
+                            로컬 브랜드와 빈티지 제품을 함께 큐레이션하며 편안한 분위기를 담아내고 있는 곳이다.
+                        </p>
+                        <div class="Contact">
+                            <h3 class="bold_name">ADDRESS</h3>
+                            <p class="Contact_des">부산광역시 해운대구<br>
+                                우동1로 38 1층</p>
+                        </div>
+                        <div class="Contact">
+                            <h3 class="bold_name">CONTACT</h3>
+                            <p class="Contact_des">Mobile: (010) 4837 1926<br>Tel: (051) 742 3812</p>
+                        </div>
+                        <div class="Contact">
+                            <h3 class="bold_name">OPEN HOURS</h3>
+                            <p class="Contact_des">평일: 12:00 - 21:00<br>
+                                주말: 13:00 - 22:00<br>
+                                (매주 화요일 휴무)</p>
+                        </div>
+                        <div class="tags">
+                            <span>전포동</span>
+                            <span>자체제작</span>
+                            <span>Coquette</span>
+                            <span>Romantic</span>
+                            <span>Unisex</span>
+                            <span>20대</span>
+                            <span>30대</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 포름 팝업 -->
+        <div class="store_popup" id="popup_FORME">
+
+            <div class="popup_inner">
+
+                <!-- 상단바 -->
+                <img class="store_popup_bar" src="./img/store_img/popup_bar.png" alt="팝업 상단바">
+
+                <!-- 닫기 버튼 -->
+                <button class="store_close_btn">
+                    <img src="./img/store_img/close_btn.png" alt="닫기">
+                </button>
+
+                <!-- 팝업 내용 -->
+                <div class="popup_contents">
+
+                    <!-- 왼쪽 : 이미지 슬라이드 -->
+                    <div class="popup_left">
+                        <div class="swiper store_card store_catch">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide ">
+                                    <img class="store_catch_img" src="./img/store_img/forme.png">
+                                </div>
+                                <div class="swiper-slide ">
+                                    <img src="./img/store_img/novo.png">
+                                </div>
+                                <div class="swiper-slide ">
+                                    <img src="./img/store_img/novo.png">
+                                </div>
+
+                            </div>
+
+
+                            <button class="plus_button"><img src="./img/store_img/plus.png" alt="플러스버튼"></button>
+
+                            <div class="swiper-button-next srote_next"></div>
+                            <div class="swiper-button-prev srote_prev"></div>
+
+                        </div>
+
+
+
+                    </div>
+
+                    <!-- 오른쪽 : 가게 정보 -->
+                    <div class="popup_right">
+                        <div class="store_name">
+                            <div class="text_box">
+                                <p class="name">포름 <span>FORME</span></p>
+                            </div>
+                            <ul class="icon">
+                                <li><a href="#"><img src="./img/home_icon.svg" width="17px" height="17px"
+                                            alt="home아이콘"></a></li>
+                                <li><a href="https://www.instagram.com" target="_blank"><img src="./img/insta_icon.svg"
+                                            width="17px" height="17px" alt="인스타아이콘"></a></li>
+                            </ul>
+                        </div>
+                        <p class="store_des">
+                            차분한 무드의 빈티지 캐주얼을 중심으로 셀렉하는 로컬 편집샵이다. 시간이 지나도 오래 입을 수 있는 실루엣과 자연스러운 컬러감의 아이템들을 소개하는 공간이다. 부산
+                            로컬 브랜드와 빈티지 제품을 함께 큐레이션하며 편안한 분위기를 담아내고 있는 곳이다.
+                        </p>
+                        <div class="Contact">
+                            <h3 class="bold_name">ADDRESS</h3>
+                            <p class="Contact_des">부산광역시 해운대구<br>
+                                우동1로 38 1층</p>
+                        </div>
+                        <div class="Contact">
+                            <h3 class="bold_name">CONTACT</h3>
+                            <p class="Contact_des">Mobile: (010) 4837 1926<br>Tel: (051) 742 3812</p>
+                        </div>
+                        <div class="Contact">
+                            <h3 class="bold_name">OPEN HOURS</h3>
+                            <p class="Contact_des">평일: 12:00 - 21:00<br>
+                                주말: 13:00 - 22:00<br>
+                                (매주 화요일 휴무)</p>
+                        </div>
+                        <div class="tags">
+                            <span>전포동</span>
+                            <span>자체제작</span>
+                            <span>Coquette</span>
+                            <span>Romantic</span>
+                            <span>Unisex</span>
+                            <span>20대</span>
+                            <span>30대</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 메쥬르 팝업 -->
+        <div class="store_popup" id="popup_MESURE">
+
+            <div class="popup_inner">
+
+                <!-- 상단바 -->
+                <img class="store_popup_bar" src="./img/store_img/popup_bar.png" alt="팝업 상단바">
+
+                <!-- 닫기 버튼 -->
+                <button class="store_close_btn">
+                    <img src="./img/store_img/close_btn.png" alt="닫기">
+                </button>
+
+                <!-- 팝업 내용 -->
+                <div class="popup_contents">
+
+                    <!-- 왼쪽 : 이미지 슬라이드 -->
+                    <div class="popup_left">
+                        <div class="swiper store_card store_catch">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide ">
+                                    <img class="store_catch_img" src="./img/store_img/mesure.png">
+                                </div>
+                                <div class="swiper-slide ">
+                                    <img src="./img/store_img/novo.png">
+                                </div>
+                                <div class="swiper-slide ">
+                                    <img src="./img/store_img/novo.png">
+                                </div>
+
+                            </div>
+
+
+                            <button class="plus_button"><img src="./img/store_img/plus.png" alt="플러스버튼"></button>
+
+                            <div class="swiper-button-next srote_next"></div>
+                            <div class="swiper-button-prev srote_prev"></div>
+
+                        </div>
+
+
+
+                    </div>
+
+                    <!-- 오른쪽 : 가게 정보 -->
+                    <div class="popup_right">
+                        <div class="store_name">
+                            <div class="text_box">
+                                <p class="name">메쥬르 <span>MESURE</span></p>
+                            </div>
+                            <ul class="icon">
+                                <li><a href="#"><img src="./img/home_icon.svg" width="17px" height="17px"
+                                            alt="home아이콘"></a></li>
+                                <li><a href="https://www.instagram.com" target="_blank"><img src="./img/insta_icon.svg"
+                                            width="17px" height="17px" alt="인스타아이콘"></a></li>
+                            </ul>
+                        </div>
+                        <p class="store_des">
+                            차분한 무드의 빈티지 캐주얼을 중심으로 셀렉하는 로컬 편집샵이다. 시간이 지나도 오래 입을 수 있는 실루엣과 자연스러운 컬러감의 아이템들을 소개하는 공간이다. 부산
+                            로컬 브랜드와 빈티지 제품을 함께 큐레이션하며 편안한 분위기를 담아내고 있는 곳이다.
+                        </p>
+                        <div class="Contact">
+                            <h3 class="bold_name">ADDRESS</h3>
+                            <p class="Contact_des">부산광역시 해운대구<br>
+                                우동1로 38 1층</p>
+                        </div>
+                        <div class="Contact">
+                            <h3 class="bold_name">CONTACT</h3>
+                            <p class="Contact_des">Mobile: (010) 4837 1926<br>Tel: (051) 742 3812</p>
+                        </div>
+                        <div class="Contact">
+                            <h3 class="bold_name">OPEN HOURS</h3>
+                            <p class="Contact_des">평일: 12:00 - 21:00<br>
+                                주말: 13:00 - 22:00<br>
+                                (매주 화요일 휴무)</p>
+                        </div>
+                        <div class="tags">
+                            <span>전포동</span>
+                            <span>자체제작</span>
+                            <span>Coquette</span>
+                            <span>Romantic</span>
+                            <span>Unisex</span>
+                            <span>20대</span>
+                            <span>30대</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 세렝 팝업 -->
+        <div class="store_popup" id="popup_Serein">
+
+            <div class="popup_inner">
+
+                <!-- 상단바 -->
+                <img class="store_popup_bar" src="./img/store_img/popup_bar.png" alt="팝업 상단바">
+
+                <!-- 닫기 버튼 -->
+                <button class="store_close_btn">
+                    <img src="./img/store_img/close_btn.png" alt="닫기">
+                </button>
+
+                <!-- 팝업 내용 -->
+                <div class="popup_contents">
+
+                    <!-- 왼쪽 : 이미지 슬라이드 -->
+                    <div class="popup_left">
+                        <div class="swiper store_card store_catch">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide ">
+                                    <img class="store_catch_img" src="./img/store_img/serein.png">
+                                </div>
+                                <div class="swiper-slide ">
+                                    <img src="./img/store_img/novo.png">
+                                </div>
+                                <div class="swiper-slide ">
+                                    <img src="./img/store_img/novo.png">
+                                </div>
+
+                            </div>
+
+
+                            <button class="plus_button"><img src="./img/store_img/plus.png" alt="플러스버튼"></button>
+
+                            <div class="swiper-button-next srote_next"></div>
+                            <div class="swiper-button-prev srote_prev"></div>
+
+                        </div>
+
+
+
+                    </div>
+
+                    <!-- 오른쪽 : 가게 정보 -->
+                    <div class="popup_right">
+                        <div class="store_name">
+                            <div class="text_box">
+                                <p class="name">세렝 <span>Serein</span></p>
+                            </div>
+                            <ul class="icon">
+                                <li><a href="#"><img src="./img/home_icon.svg" width="17px" height="17px"
+                                            alt="home아이콘"></a></li>
+                                <li><a href="https://www.instagram.com" target="_blank"><img src="./img/insta_icon.svg"
+                                            width="17px" height="17px" alt="인스타아이콘"></a></li>
+                            </ul>
+                        </div>
+                        <p class="store_des">
+                            차분한 무드의 빈티지 캐주얼을 중심으로 셀렉하는 로컬 편집샵이다. 시간이 지나도 오래 입을 수 있는 실루엣과 자연스러운 컬러감의 아이템들을 소개하는 공간이다. 부산
+                            로컬 브랜드와 빈티지 제품을 함께 큐레이션하며 편안한 분위기를 담아내고 있는 곳이다.
+                        </p>
+                        <div class="Contact">
+                            <h3 class="bold_name">ADDRESS</h3>
+                            <p class="Contact_des">부산광역시 해운대구<br>
+                                우동1로 38 1층</p>
+                        </div>
+                        <div class="Contact">
+                            <h3 class="bold_name">CONTACT</h3>
+                            <p class="Contact_des">Mobile: (010) 4837 1926<br>Tel: (051) 742 3812</p>
+                        </div>
+                        <div class="Contact">
+                            <h3 class="bold_name">OPEN HOURS</h3>
+                            <p class="Contact_des">평일: 12:00 - 21:00<br>
+                                주말: 13:00 - 22:00<br>
+                                (매주 화요일 휴무)</p>
+                        </div>
+                        <div class="tags">
+                            <span>전포동</span>
+                            <span>자체제작</span>
+                            <span>Coquette</span>
+                            <span>Romantic</span>
+                            <span>Unisex</span>
+                            <span>20대</span>
+                            <span>30대</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 마렌 팝업 -->
+        <div class="store_popup" id="popup_Maren">
+
+            <div class="popup_inner">
+
+                <!-- 상단바 -->
+                <img class="store_popup_bar" src="./img/store_img/popup_bar.png" alt="팝업 상단바">
+
+                <!-- 닫기 버튼 -->
+                <button class="store_close_btn">
+                    <img src="./img/store_img/close_btn.png" alt="닫기">
+                </button>
+
+                <!-- 팝업 내용 -->
+                <div class="popup_contents">
+
+                    <!-- 왼쪽 : 이미지 슬라이드 -->
+                    <div class="popup_left">
+                        <div class="swiper store_card store_catch">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide ">
+                                    <img class="store_catch_img" src="./img/store_img/maren.png">
+                                </div>
+                                <div class="swiper-slide ">
+                                    <img src="./img/store_img/novo.png">
+                                </div>
+                                <div class="swiper-slide ">
+                                    <img src="./img/store_img/novo.png">
+                                </div>
+
+                            </div>
+
+
+                            <button class="plus_button"><img src="./img/store_img/plus.png" alt="플러스버튼"></button>
+
+                            <div class="swiper-button-next srote_next"></div>
+                            <div class="swiper-button-prev srote_prev"></div>
+
+                        </div>
+
+
+
+                    </div>
+
+                    <!-- 오른쪽 : 가게 정보 -->
+                    <div class="popup_right">
+                        <div class="store_name">
+                            <div class="text_box">
+                                <p class="name">마렌 <span>Maren</span></p>
+                            </div>
+                            <ul class="icon">
+                                <li><a href="#"><img src="./img/home_icon.svg" width="17px" height="17px"
+                                            alt="home아이콘"></a></li>
+                                <li><a href="https://www.instagram.com" target="_blank"><img src="./img/insta_icon.svg"
+                                            width="17px" height="17px" alt="인스타아이콘"></a></li>
+                            </ul>
+                        </div>
+                        <p class="store_des">
+                            차분한 무드의 빈티지 캐주얼을 중심으로 셀렉하는 로컬 편집샵이다. 시간이 지나도 오래 입을 수 있는 실루엣과 자연스러운 컬러감의 아이템들을 소개하는 공간이다. 부산
+                            로컬 브랜드와 빈티지 제품을 함께 큐레이션하며 편안한 분위기를 담아내고 있는 곳이다.
+                        </p>
+                        <div class="Contact">
+                            <h3 class="bold_name">ADDRESS</h3>
+                            <p class="Contact_des">부산광역시 해운대구<br>
+                                우동1로 38 1층</p>
+                        </div>
+                        <div class="Contact">
+                            <h3 class="bold_name">CONTACT</h3>
+                            <p class="Contact_des">Mobile: (010) 4837 1926<br>Tel: (051) 742 3812</p>
+                        </div>
+                        <div class="Contact">
+                            <h3 class="bold_name">OPEN HOURS</h3>
+                            <p class="Contact_des">평일: 12:00 - 21:00<br>
+                                주말: 13:00 - 22:00<br>
+                                (매주 화요일 휴무)</p>
+                        </div>
+                        <div class="tags">
+                            <span>전포동</span>
+                            <span>자체제작</span>
+                            <span>Coquette</span>
+                            <span>Romantic</span>
+                            <span>Unisex</span>
+                            <span>20대</span>
+                            <span>30대</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!--manthly-->
+        <section id="manthly" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
+            <div class="manthly_img">
+                <div class="july wide_1">
+                    <img class="store_img" src="./img/store_img/monthly_img1.jpg" alt="아누크가게이미지">
+                    <video class="store_video" muted loop playsinline>
+                        <source src="./img/store_img/monthly1.mp4" type="video/mp4">
+                    </video>
+                    <div class="des">
+                        <h3>[July]</h3>
+                        <ul>
+                            <li>
+                                <div class="store_name">
+                                    <div class="text_box">
+                                        <p class="name"><b>[해리단길]</b> 아누크 ANOUK</p>
+                                    </div>
+                                    <ul class="icon">
+                                        <li><a href="#"><img src="./img/home_icon.svg" width="17px" height="17px"
+                                                    alt="home아이콘"></a></li>
+                                        <li><a href="#"><img src="./img/insta_icon.svg" width="17px" height="17px"
+                                                    alt="인스타아이콘"></a></li>
+                                    </ul>
+                                </div>
+                                <h1>ANOUK</h1>
+                            </li>
+                            <li class="text">독창적인 빈티지 셀렉션과 감각적인 공간 구성으로 부산 로컬 패션 문화를 새롭게 보여주고 있습니다. 방문객들에게 단순한 쇼핑을 넘어
+                                하나의 경험을 제공한다는 점에서 7월의 스토어로 선정되었다.</li>
+                        </ul>
+                    </div>
+                    <div class="gradient"></div>
+                </div>
+
+                <div class="june wide_2 Month_relative">
+                    <h3 class="Month">[June]</h3>
+                    <div class="color green"></div>
+                    <img class="store_img" src="./img/store_img/monthly_img2.jpg" alt="아누크가게이미지">
+                </div>
+
+                <div class="may Month_relative">
+                    <h3 class="Month ">[May]</h3>
+                    <div class="color sky"></div>
+                    <img class="store_img" src="./img/store_img/monthly_img3.jpeg" alt="아누크가게이미지">
+                </div>
+
+                <div class="april Month_relative">
+                    <h3 class="Month">[April]</h3>
+                    <div class="color Brown"></div>
+                    <img class="store_img" src="./img/store_img/monthly_img4.jpg" alt="아누크가게이미지">
+                </div>
+
+            </div>
+            <img class="monthly_title" src="./img/store_img/monthly_stores.svg" alt="타이틀">
+            <img class="title_cat" src="./img/store_img/cat-10 1.svg" alt="고양이">
+        </section>
+
+
+
+        <!--interview-->
+        <section id="interview" class="inner" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
+            <div class="title"><img src="./img/store_img/Interview.svg" alt="explore"></div>
+
+            <div class="top_interview">
+                <div class="interview_img">
+                    <img id="mainImg" src="./img/store_img/interview_img1.jpg" alt="인터뷰메인이미지">
+                    <div class="gradient"></div>
+                    <div class="interview_name">
+                        <div class="text_box">
+                            <p class="name"><b>[해리단길]</b> 아누크 ANOUK</p>
+                            <ul class="icon">
+                                <li><a href="#"><img src="./img/home_icon.svg" alt="home아이콘"></a></li>
+                                <li><a href="#"><img src="./img/insta_icon.svg" alt="인스타아이콘"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="text">
+                        <p id="mainDate">2026. 05. 02 | by 가남희</p>
+                        <h3 id="mainTitle">
+                            시간이 지나도 그 계절이 떠오르는 옷을 소개하고 싶었어요.
+                        </h3>
+                        <p id="mainDesc">[NUVO] 정강희 대표 인터뷰</p>
+                    </div>
+                    <a href="./interview.html" target="_blank"><img class="view_all"
+                            src="./img/store_img/interview_View_icon.png" alt="인터뷰상세페이지보기"></a>
+                </div>
+
+
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="date">DATE | AUTHOR</th>
+                            <th class="title_th">TITLE</th>
+                            <th class="who">INTERVIEW</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr class="interview_item" data-img="./img/store_img/interview_img1.jpg"
+                            data-date="2026. 05. 02 | by 가남희" data-title="“시간이 지나도 그 계절이 떠오르는 옷을 소개하고 싶었어요.”"
+                            data-desc="[NUVO] 정강희 대표 인터뷰">
+                            <td class="color">2026. 05. 02 | by 가남희</td>
+                            <td>"시간이 지나도 그 계절이 떠오르는 옷을 소개하고 싶었어요."</td>
+                            <td class="color">[NUVO]정하람 대표 인터뷰</td>
+                        </tr>
+
+                        <tr class="interview_item" data-img="./img/store_img/interview_img2.jpg"
+                            data-date="2026. 04. 16 | by 박희준" data-title="“작은 공간이지만 저희만의 무드와 취향을 담아내려고 노력하고 있어요”"
+                            data-desc="[UNFOLD] 최민준 대표 인터뷰">
+                            <td class="color">2026. 04. 16 | by 박희준</td>
+                            <td>“작은 공간이지만 저희만의 무드와 취향을 담아내려고 노력하고 있어요”</td>
+                            <td class="color">[UNFOLD] 최민준 대표 인터뷰</td>
+                        </tr>
+                        <tr class="interview_item" data-img="./img/store_img/interview_img3.jpg"
+                            data-date="2026. 03. 28 | by 박희준" data-title="“옷 하나보다 그 사람한테 어울리는 분위기를 추천해드리고 싶었어요”"
+                            data-desc="[STILL] 김태윤 대표 인터뷰">
+                            <td class="color">2026. 03. 28 | by 박희준</td>
+                            <td>“옷 하나보다 그 사람한테 어울리는 분위기를 추천해드리고 싶었어요”</td>
+                            <td class="color">[STILL] 김태윤 대표 인터뷰</td>
+                        </tr>
+                        <tr class="interview_item" data-img="./img/store_img/interview_img2.jpg"
+                            data-date="2026. 02. 18 | by 서지민" data-title="“좋은 옷은 결국 자주 손이 가는 옷이라고 생각해요.”"
+                            data-desc="[ROOM33] 윤태성 대표 인터뷰">
+                            <td class="color">2026. 02. 18 | by 서지민</td>
+                            <td>“좋은 옷은 결국 자주 손이 가는 옷이라고 생각해요.”</td>
+                            <td class="color">[ROOM33] 윤태성 대표 인터뷰</td>
+                        </tr>
+                        <tr class="interview_item" data-img="./img/store_img/interview_img2.jpg"
+                            data-date="2026. 01. 30 | by 이가은" data-title="“액세서리 하나로도 스타일의 분위기는 완전히 달라질 수 있어요.”"
+                            data-desc="[OBJECTIVE] 이소연 대표 인터뷰">
+                            <td class="color">2026. 01. 30 | by 이가은</td>
+                            <td>“액세서리 하나로도 스타일의 분위기는 완전히 달라질 수 있어요.”</td>
+                            <td class="color">[OBJECTIVE] 이소연 대표 인터뷰</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </section> <!--interview-->
+    </main>
+
+
+
+
+    <footer id="footer" data-aos="fade-up" data-aos-duration="700">
+        <div class="Newsletter">
+            <img src="./img/logo.svg" alt="로고">
+        </div>
+        <div id="footer_bottom" class="footer">
+            <div class="inner2">
+                <ul>
+                    <li>
+                        <b>부산광역시 해운대구 우동 123-45 Fitme Studio</b><br>
+                        <b>대표자 |</b> 고하늘<br>
+                        <b>사업자등록번호 |</b> 123-45-67890<br>
+                        <b>통신판매업신고번호 |</b> 2026-부산해운대-0123
+                    </li>
+                </ul>
+                <ul>
+                    <li><b>전화번호 | 051-123-4567</b><br>
+                        <b>이메일 |</b> contact@fitme.kr<br>
+                        <b>사업자등록번호 |</b> 123-45-67890<br>
+                        <b>주소 |</b> 부산광역시 해운대구 우동 123-45 FITME Studio
+                    </li>
+                </ul>
+                <ul>
+                    <li><b>회사소개 | 이용약관 | 개인정보처리방침 | 고객센터 |<br>제휴문의 | 광고문의 | 브랜드 등록</b><br>
+
+                    </li>
+                </ul>
+                <ul class="Copyright">
+                    <li><b>Copyright © 2026 FITME.</b><br>
+                        All rights reserved.
+                    </li>
+                    <li class="icon">
+                        <a href="https://www.instagram.com/" target="_blank"><img src="./img/insta_icon.svg"
+                                alt="인스타그램아이콘" width="23px" height="23px"></a>
+                        <a href="https://www.youtube.com/" target="_blank"><img src="./img/youtube_icon.png"
+                                alt="유튜브아이콘"></a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </footer>
+    <div class="fixed">
+        <a href="#main_banner"><img src="./img/fixed_top.png" alt="페이지상단가기버튼"></a>
+        <a href="#footer_bottom"><img src="./img/fixed_bottom.png" alt="페이지상단가기버튼"></a>
+    </div>
+
+
+
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--공통 script-->
+    <script src="./js/script.js"></script>
+    <script src="./js/store_script.js"></script>
+</body>
+
+</html>
