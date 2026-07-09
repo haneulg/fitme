@@ -56,25 +56,31 @@ body {
     padding-top: 17px;
     margin-top: 17px;
 }
-.go_arrow *{
+
+.go_arrow * {
     animation: arrowBlink 2.2s steps(1) infinite;
 }
 
-@keyframes arrowBlink{
-    0%, 8%{
-        fill:#C4D92D;
+@keyframes arrowBlink {
+
+    0%,
+    8% {
+        fill: #C4D92D;
     }
 
-    9%, 16%{
-        fill:#222222;
+    9%,
+    16% {
+        fill: #222222;
     }
 
-    17%, 25%{
-        fill:#C4D92D;
+    17%,
+    25% {
+        fill: #C4D92D;
     }
 
-    26%, 100%{
-        fill:#222222;
+    26%,
+    100% {
+        fill: #222222;
     }
 }
 
@@ -311,23 +317,28 @@ body {
 #Fitme_styling>.styling_img_box>.styling>.swiper-wrapper>.swiper-slide>.Clothing_Info>li:last-child {
     padding-bottom: 0px;
 }
-#Fitme_styling .popup_btn{border: none;
-background: none;
-cursor: pointer;
-padding: 5px;}
 
-#Fitme_styling .popup_btn path{fill: #222222;}
+#Fitme_styling .popup_btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+#Fitme_styling .popup_btn path {
+    fill: #222222;
+}
 
 
 /*여기까지 Clothing_Info 꾸밈요소*/
 
 
 /*Clothing_Info_포지션*/
-#Fitme_styling .Outfit{
+#Fitme_styling .Outfit {
     position: relative;
 }
 
-#Fitme_styling .Clothing_Info{
+#Fitme_styling .Clothing_Info {
     position: absolute;
     top: 100px;
     left: 200px;
@@ -336,7 +347,7 @@ padding: 5px;}
     transition: 0.3s;
 }
 
-#Fitme_styling .Outfit:hover .Clothing_Info{
+#Fitme_styling .Outfit:hover .Clothing_Info {
     opacity: 1;
 }
 
@@ -448,6 +459,10 @@ padding: 5px;}
     font-weight: 700;
     color: #fff;
     text-align: center;
+}
+
+#store .store_map .store_name .store_type_Women{
+    background-color: #F9BCC0;
 }
 
 #store .store_map .info-box {
@@ -867,6 +882,7 @@ padding: 5px;}
 /*interview*/
 #Interview {
     padding-bottom: 176px;
+    position: relative;
 }
 
 #Interview .Contents .text_box {
@@ -954,9 +970,16 @@ padding: 5px;}
     }
 }
 
-#Interview .box1 .img2{border: #222222 solid 1.5px;
-box-shadow: 4px 4px 0 #222222;} 
+#Interview .box1 .img2 {
+    border: #222222 solid 1.5px;
+    box-shadow: 4px 4px 0 #222222;
+}
 
+#Interview .cat4 {
+    position: absolute;
+    bottom: 550px;
+    left: 430px;
+}
 
 
 /*footer*/
@@ -1175,7 +1198,7 @@ box-shadow: 4px 4px 0 #222222;}
 .popup_right .Contact {
     display: flex;
     justify-content: space-between;
-    border-top:solid 0.5px #222;
+    border-top: solid 0.5px #222;
     padding: 9px 0;
 }
 
@@ -1183,20 +1206,24 @@ box-shadow: 4px 4px 0 #222222;}
     width: 145px;
     font-size: 12px;
 }
-.popup_right .tags{
-      display: flex;
-    flex-wrap: wrap;   /* 공간이 부족하면 다음 줄로 */
+
+.popup_right .tags {
+    display: flex;
+    flex-wrap: wrap;
+    /* 공간이 부족하면 다음 줄로 */
     gap: 4px;
 }
-.popup_right .tags span{border: #222222 1px solid;
-padding: 4px 8px;
-font-weight: 600;
+
+.popup_right .tags span {
+    border: #222222 1px solid;
+    padding: 4px 8px;
+    font-weight: 600;
 }
 
-.store_popup{
-    display:none;
+.store_popup {
+    display: none;
 }
 
-.store_popup.active{
-    display:flex;
+.store_popup.active {
+    display: flex;
 }

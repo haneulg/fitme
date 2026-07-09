@@ -275,7 +275,7 @@
     margin: 0 auto;
     margin-bottom: 61px;
 }
-
+#styling .styling_img{max-width: 100%;}
 
 
 /*Clothing_Info*/
@@ -378,58 +378,60 @@
 }
 
 /*플러스버튼 + 정보창 위치*/
-#styling .info_wrap1 {
-    top: 450px;
-    left: 186px;
+.info_wrap1{
+    top:61.30%;
+    left:41.00%;
 }
 
-#styling .info_wrap2 {
-    top: 200px;
-    left: 280px;
+.info_wrap2{
+    top:27.24%;
+    left:61.71%;
 }
 
-#styling .info_wrap2-2 {
-    top: 400px;
-    left: 180px;
-}
-#styling .info_wrap3 {
-    top: 350px;
-    left: 250px;
+.info_wrap2-2{
+    top:54.49%;
+    left:39.67%;
 }
 
-#styling .info_wrap3-2 {
-    top: 500px;
-    left: 200px;
+.info_wrap3{
+    top:47.68%;
+    left:55.10%;
 }
 
-#styling .info_wrap4 {
-    top: 300px;
-    left: 180px;
+.info_wrap3-2{
+    top:68.11%;
+    left:44.08%;
 }
 
-
-#styling .info_wrap5 {
-    top: 400px;
-    left: 180px;
+.info_wrap4{
+    top:40.87%;
+    left:39.67%;
 }
 
-#styling .info_wrap6 {
-    top: 310px;
-    left: 180px;
-}
-#styling .info_wrap7 {
-    top: 450px;
-    left: 180px;
-}
-#styling .info_wrap8 {
-    top: 180px;
-    left: 180px;
-}
-#styling .info_wrap8-2 {
-    top: 450px;
-    left: 250px;
+.info_wrap5{
+    top:54.49%;
+    left:39.67%;
 }
 
+.info_wrap6{
+    top:42.23%;
+    left:39.67%;
+}
+
+.info_wrap7{
+    top:61.30%;
+    left:39.67%;
+}
+
+.info_wrap8{
+    top:24.52%;
+    left:39.67%;
+}
+
+.info_wrap8-2{
+    top:61.30%;
+    left:55.10%;
+}
 
 
 

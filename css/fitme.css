@@ -146,6 +146,7 @@ body {
     border: 2px solid #222;
     padding: 40px;
     box-sizing: border-box;
+      overflow: hidden;   /* 추가 */
     
 }
 
@@ -176,6 +177,7 @@ body {
 
 #catch_popup .tab_content{
     display: none;
+     height: 560px;      /* 추가 */
 }
 
 #catch_popup .tab_content.active{
@@ -193,6 +195,10 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+
+    height: 100%;       /* max-height 말고 */
+    overflow-y: auto;
+    box-sizing: border-box;
 }
 
 .saved_card{
@@ -227,6 +233,11 @@ body {
     display:flex;
     flex-wrap:wrap;
     gap:20px;
+
+/*스크롤생기게하기 */
+    max-height: 520px;   /* 원하는 높이 */
+    overflow-y: auto;    /* 내용이 넘치면 세로 스크롤 */
+    padding-right: 10px;
 }
 
 #saved_store_list .saved_card{
@@ -238,6 +249,34 @@ body {
     height:240px;
     object-fit:cover;
     display:block;
+}
+
+
+/*스크롤생기게하기 */
+#saved_style_list::-webkit-scrollbar{
+    width:8px;
+}
+
+#saved_style_list::-webkit-scrollbar-thumb{
+    background:#C4D92D;
+    border-radius:10px;
+}
+
+#saved_style_list::-webkit-scrollbar-track{
+    background:#eee;
+}
+
+#saved_store_list::-webkit-scrollbar{
+    width:8px;
+}
+
+#saved_store_list::-webkit-scrollbar-thumb{
+    background:#C4D92D;
+    border-radius:10px;
+}
+
+#saved_store_list::-webkit-scrollbar-track{
+    background:#eee;
 }
 
 

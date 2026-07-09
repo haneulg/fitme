@@ -68,6 +68,8 @@ const reviewStore = document.getElementById("reviewStore");
 // 리뷰 클릭
 // =========================================
 
+if(reviewItems.length){
+
 reviewItems.forEach(item=>{
 
     item.addEventListener("click",()=>{
@@ -101,7 +103,7 @@ reviewItems.forEach(item=>{
     });
 
 });
-
+}
 
 
 /* =======================================
@@ -116,11 +118,23 @@ if(reviewHeart){
 
         e.preventDefault();
 
-        // 현재 메인 리뷰 정보 가져오기
-        const imgSrc = document.getElementById("reviewMainImg").src;
-const user = document.getElementById("reviewUser").textContent;
-const store = document.getElementById("reviewStore").textContent;
-const spec = document.getElementById("reviewSpec").textContent;
+
+        const imgEl = document.getElementById("reviewMainImg");
+        const userEl = document.getElementById("reviewUser");
+        const storeEl = document.getElementById("reviewStore");
+        const specEl = document.getElementById("reviewSpec");
+
+
+        // 요소 없으면 실행 중단
+        if(!imgEl || !userEl || !storeEl || !specEl){
+            return;
+        }
+
+
+        const imgSrc = imgEl.src;
+        const user = userEl.textContent;
+        const store = storeEl.textContent;
+        const spec = specEl.textContent;
 
         // 이미 저장되어 있는지 확인
         const isExist = savedStyles.some(
