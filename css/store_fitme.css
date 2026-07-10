@@ -373,8 +373,11 @@ font-weight: 600;
 }
 
 
-#manthly .store_img,
-#manthly .store_video {
+
+
+/* July만 적용 */
+#manthly .july .store_img,
+#manthly .july .store_video {
     position: absolute;
     top: 0;
     left: 0;
@@ -499,6 +502,7 @@ font-weight: 600;
 
 #manthly .Month_relative .color {
     position: absolute;
+    
     width: 100%;
     height: 100%;
     background:

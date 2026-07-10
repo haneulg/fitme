@@ -394,15 +394,15 @@ body {
     cursor: pointer;
 }
 
-#store .store_map .Vintage {
+#store .store_map .Unisex {
     background: #7A9A3D;
 }
 
-#store .store_map .Handmade {
-    background: #BEDAFF;
+#store .store_map .Men {
+    background: #a7cdff;
 }
 
-#store .store_map .Others {
+#store .store_map .Women {
     background: #F9BCC0;
 }
 
@@ -464,6 +464,11 @@ body {
 #store .store_map .store_name .store_type_Women{
     background-color: #F9BCC0;
 }
+
+#store .store_map .store_name .store_type_Men{
+    background-color: #a7cdff;
+}
+
 
 #store .store_map .info-box {
     padding: 25px;
